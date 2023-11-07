@@ -39,6 +39,12 @@ body {
     margin: 0 10px;
 }
 
+.background-responsive-img{
+    max-width: 100%;
+    width:400px;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
     .menu ul {
         text-align: center; 
