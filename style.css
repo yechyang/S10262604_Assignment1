@@ -40,16 +40,16 @@ body {
 }
 
 .background-responsive-img{
-    background-image: url('image/8c75a55a00cfd5985288e7197bfd5638.jpg');
-    background-size: 55%;
+    background-image: url('image/160c676fa6d0a59052c0b1adb28f0578.jpg');
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-color: transparent;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     position: relative;
     height: 100vh;
+
 }
 
 @media screen and (max-width: 768px) {
