@@ -73,6 +73,68 @@ h1{
     display:block;
 }
 
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    height: 50px; /* Adjust the height as needed */
+    background-color: #333; /* Set a background color for the slider */
+}
+
+.slider-text-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 98%; /* Adjust the width as needed */
+    margin: 20px auto; /* Add some top margin to move the text down */
+}
+
+
+.slider-text {
+    animation: slide 14s linear infinite; /* Adjust the animation duration as needed */
+    white-space: nowrap;
+    color: #fff; /* Set text color */
+    font-size: 18px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.button{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(35, 116, 85);
+    font-size: 16px;
+    border: none;
+    border-radius:5px;
+    position:absolute;
+    color: whitesmoke;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%); /*align the button to the center*/
+    transition: color 0.3s ease; /*smooth transition effect*/
+}
+
+.button:hover {
+    color:black;
+}
+
+.text_above_button{
+    text-align:center;
+    font-size: 18px;
+    color: whitesmoke;
+    position: absolute;
+    top:71%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 @media screen and (max-width: 768px) {
     .menu ul {
