@@ -150,6 +150,32 @@ h1{
     }
 }
 
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line if the screen is too small */
+}
+
+.box {
+    width: 28%;
+    border: 0.2px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box img {
+    max-width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.box-text {
+    margin-top: 10px;
+}
+
 .dropdown-content {
     display: none; /* Hide dropdown content initially */
     position: absolute;
