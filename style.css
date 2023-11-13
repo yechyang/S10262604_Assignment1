@@ -89,7 +89,7 @@ h1{
 
 
 .slider-text {
-    animation: slide 14s linear infinite; /* Adjust the animation duration as needed */
+    animation: slide 12s linear infinite; /* Adjust the animation duration as needed */
     white-space: nowrap;
     color: #fff; /* Set text color */
     font-size: 18px;
@@ -193,4 +193,61 @@ h1{
 /* Create the hover effect to show the dropdown content */
 .menu ul li:hover .dropdown-content {
     display: block;
+}
+
+.left-section {
+    margin-left: 15%; /* Increase the left margin to move the section more to the right */
+}
+
+.email-input {
+    width: 30%;
+    padding: 8px;
+    margin-left:30px;
+    border: 0.5px solid;
+    border-color: black;
+    border-radius: 5px;
+    margin-right: 10px;
+    color:black;
+}
+
+.enter-button {
+    padding: 8px 16px;
+    border: 1px solid;
+    border-color:black;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    margin-right:25%;
+    margin-top: -110px;
+}
+
+/*.right-section h3 {
+    text-align: center; /* Add this line to align the text to the center */
+    /*margin:40px 0 0;
+    font-weight: bold;
+}*/
+
+.info-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-links li {
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
 }
