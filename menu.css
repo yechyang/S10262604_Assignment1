@@ -95,7 +95,7 @@ h2{
     width: 30%; /* Adjust as needed */
     text-align: center;
     margin: 30px;
-}
+} 
 
 .box img {
     max-width: 70%;
@@ -106,4 +106,50 @@ h2{
 .box p {
     margin-top: 10px;
     font-weight: bold;
+} 
+
+/*testing*/
+
+#slider-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-item {
+    width: 100%;
+    display: none;
+    justify-content:center;
+    text-align:center;
+    margin-left:30px;
+}
+
+.slider-item img {
+    max-width: 100%;
+    height: auto;
+    width:200px;
+    margin: 0 10px;
+    border-radius:30px;
+    margin-bottom:10px;
+}
+
+.slider-item p{
+    margin-top:60px;
+}
+
+#buttons-container {
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-right: 10px;
+    background-color: #fafdf3;
+    border:none;
+    font-size: 22px;
+}
+
+button:hover{
+    color: gray;
 }

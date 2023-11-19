@@ -16,7 +16,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Deliver</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -26,18 +25,19 @@
                 <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
             </div>
             <div class="details">
-                <h1>Fluffy and Flaky Croissant</h1>
+                <h1 style="font-family:'Pacificoregular'">Fluffy and Flaky Croissant</h1>
                 <p>The name derived from french it means crescent or crescent of the moon. The origin of the croissant can actually be traced back to 13th century Austria, where it was called the kipferl, the German word for crescent.</p>
             </div>
         </div>
     </header>
     <br>
     <br>
+    <br>
     <section>
         <h1 style="text-align: center;font-size: 34px;">What To Eat</h1><br>
         <h2>Viennoiserie</h2>
         <hr style="height:1px;background-color: black;border:none;width:15%;">
-        <div class="box-container">
+        <div class="box-container"> 
             <!-- First row of boxes -->
             <div class="box">
                 <img src="image/croissants-wooden-cutting-board.jpg" alt="Item 1">
@@ -50,7 +50,7 @@
             <div class="box">
                 <img src="image/pain au chocolat.jpg" alt="Item 3">
                 <p>Pain Au Chocolat</p>
-            </div>
+            </div> 
 
             <!-- Second row of boxes -->
             <div class="box">
@@ -63,6 +63,61 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div id="buttons-container">
+            <button onclick="changeSliderItem(1)">Viennnoiserie</button>
+            <button onclick="changeSliderItem(2)">Pastry</button>
+            <button onclick="changeSliderItem(3)">Bread</button>
+        </div>
+
+        <div id="slider-container">
+            <div id="slider-item1" class="slider-item">
+                <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
+                <p>Croissant</p>
+                <img src="image/almond croissant.jpg" alt="Chocolate Croissant">
+                <p>Almond Croissant</p>
+                <img src="image/chocolate croissant.jpg" alt="Almond Croissant">
+                <p>Chocolate Croissant</p>
+                <img src="image/pain au chocolat.jpg" alt="Pain Au Chocolat">
+                <p>Pain Au Chocolat</p>
+                <img src="image/kouign amann.jpg" alt="Kouign Amann">
+                <p>Kouign Amann</p>
+            </div>
+            <div id="slider-item2" class="slider-item">
+                <img src="image2.jpg" alt="Item 2">
+                <p>Item 2: Pastry</p>
+            </div>
+            <div id="slider-item3" class="slider-item">
+                <img src="image3.jpg" alt="Item 3">
+                <p>Item 3: Bread</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let currentSlide = 1;
+
+        function showSlide(slideIndex) {
+            const slides = document.getElementsByClassName('slider-item');
+            if (slideIndex < 1) {
+                currentSlide = slides.length;
+            } else if (slideIndex > slides.length) {
+                currentSlide = 1;
+            } else {
+                currentSlide = slideIndex;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            slides[currentSlide - 1].style.display = 'flex';
+        }
+
+        function changeSliderItem(index) {
+            showSlide(index);
+        }
+    </script>
 </body>
 </html>
 

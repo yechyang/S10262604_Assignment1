@@ -27,15 +27,14 @@
                 </li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Deliver</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <br>
         <div class="background-responsive-img">
-            <div class="slider-text-container">
-                <div class="slider-text">
+            <div class="discount-text-container">
+                <div class="discount-text">
                     <p>20% Discount off any items</p>
                 </div>
             </div>
@@ -76,8 +75,24 @@
     <section>
         <div class="background">
             <div class="text-below-box">
-                <h2 style="font-size: 30px;font-weight: bold;">Commitment:</h2>
-                <p>Our commitment is to deliver a sensory experience of freshness, quality, and unparalleled taste in every loaf, using locally sourced, organic ingredients and traditional baking methodologies.</p>
+                <h2 style="font-size: 30px;font-weight: bold;">Visions And Missions</h2>
+                <div class="slider-container">
+                    <div class="slider-text" data-index="1">
+                        <p><strong>Commitment:</strong> Our commitment is to delivering a sensory experience of freshness, quality, and unparalleled taste in every loaf</p>
+                    </div>
+                    <div class="slider-text" data-index="2">
+                        <p><strong>Creativity:</strong> We strive to satisfy your sweet tooth through our variety of delectable pastries and cakes, made with love, creativity, and the finest natural ingredients.</p>
+                    </div>
+                    <div class="slider-text" data-index="3">
+                        <p><strong>Authenticity:</strong> Our purpose is to bake fresh, authentic, and scrumptious bread, while promoting healthy eating and creating a sustainable future.</p>
+                    </div>
+                </div>
+                
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </div>
         <br>
@@ -98,5 +113,24 @@
             <img src="image/twitter.png" alt="Facebook">
         </div>>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentIndex = 1;
+            showText(currentIndex);
+    
+            function showText(index) {
+                const texts = document.querySelectorAll(".slider-text");
+                texts.forEach((text) => {
+                    text.style.display = +text.getAttribute("data-index") === index ? "block" : "none";
+                });
+            }
+    
+            window.currentSlide = function (index) {
+                currentIndex = index;
+                showText(currentIndex);
+            };
+        });
+    </script>
 </body>
 </html>

@@ -5,15 +5,6 @@ body {
     background-color:#fafdf3
 }
 
-.banner {
-    background-image: url('your-banner-image.jpg');
-    background-size: cover;
-    height: 100px; /* Adjust the height as needed */
-    color: #333;
-    text-align: center;
-    padding: 20px;
-}
-
 .socialmedia{
     text-align: end;
     margin-right: 10px;
@@ -71,6 +62,10 @@ h1{
     margin: 0 10px;
 }
 
+.menu ul li a:hover{
+    color:gray;
+}
+
 .background-responsive-img{
     background-image: url('image/background.jpg');
     background-size: cover;
@@ -91,7 +86,7 @@ h1{
     background-color: #333; /* Set a background color for the slider */
 }
 
-.slider-text-container {
+.discount-text-container {
     overflow: hidden;
     position: relative;
     max-width: 98%; /* Adjust the width as needed */
@@ -99,11 +94,11 @@ h1{
 }
 
 
-.slider-text {
+.discount-text {
     animation: slide 12s linear infinite; /* Adjust the animation duration as needed */
     white-space: nowrap;
     color: #fff; /* Set text color */
-    font-size: 18px;
+    font-size: 22px;
 }
 
 @keyframes slide {
@@ -164,20 +159,6 @@ h1{
 
 .second-button:hover{
      color:black;
-}
-
-@media screen and (max-width: 768px) {
-    .menu ul {
-        text-align: center; 
-    }
-    .menu ul li {
-        display: inline-block; 
-        margin: 10px 0; 
-    }
-    .background-responsive-img {
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
 }
 
 .box-container {
@@ -246,5 +227,166 @@ h1{
 /* Create the hover effect to show the dropdown content */
 .menu ul li:hover .dropdown-content {
     display: block;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 -150px;
+    padding: 0 150px;
+    overflow:hidden;
+    position: relative;
+    background:transparent;
+}
+
+.slider-text {
+    margin: -20px 0;
+    display: none;
+    animation: slideIn 3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slider-text:first-child {
+    display: block;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        font-size:12px;
+        margin:0;
+    }
+    .socialmedia{
+        text-align: end;
+        margin: 5px 10px 0 0;
+    }
+
+    .socialmedia img {
+        max-width: 25px;
+        margin-right: 5px;
+    }
+    .socialmedia2{
+        text-align:center;
+        margin:0;
+    }
+    .socialmedia2 img{
+        max-width: 25px;
+    }
+
+    .logo img {
+        max-width: 60px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .background-responsive-img {
+        background-size:cover;
+        background-attachment: scroll;
+    }
+
+    .discount-text-container {
+        max-width: 100%; /* Adjust the width to 100% for full responsiveness */
+        margin: 20px auto; /* Add some top margin to move the text down */
+    }
+
+    .discount-text {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .button,
+    .text_above_button,
+    .second-button{
+        margin: 10px 0;
+    }
+
+    .button {
+        top: 85%;
+        transform: translateX(-50%);
+        padding: 6px 15px; 
+        font-size: 14px;
+    }
+
+    .second-button{
+        padding: 6px 15px;
+        font-size: 14px; 
+        border-radius: 5px; 
+    }
+
+    .text_above_button {
+        top: 60%;
+        font-size: 14px; 
+    }
+
+    .second-button-container {
+        margin-top: 8px;
+        text-align:center;
+    }
+
+    .box-container {
+        justify-content: center;
+    }
+
+    .box {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .background {
+        height: 35vh;
+    }
+
+    .slider-container,
+    .slider-text-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider-text {
+        display: block;
+        font-size: 11px;
+        overflow:auto;
+    }
+
+    .dots-container {
+        margin-top: 5px;
+    }
+    .dot {
+        margin: 0 2px;
+        height: 10px; /* Decrease the height of the dot */
+        width: 10px; /* Decrease the width of the dot */
+    }
 }
 
