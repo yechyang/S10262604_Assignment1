@@ -22,3 +22,8 @@ Value for users
 - KYC bakery's mission, commitment and creativity
 - Discounts for users 
 - Contact details, location and operating hours
+
+
+
+### CREDITS
+ICONS and Images Created by Freepik - Flaticon

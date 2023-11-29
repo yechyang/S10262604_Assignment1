@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="Remaining.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
     <header>
         <nav class="menu">
+            <div class="icons">
+                <img src="image/menu.png" alt="Shop">
+                <img src="image/market.png" alt="Market" id="market-icon">
+                <span id="market-counter">0</span>
+            </div>
             <div class="logo">
                 <img src="image/croissant.png" alt="KYC Bakery">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -34,89 +40,149 @@
     <br>
     <br>
     <section>
-        <h1 style="text-align: center;font-size: 34px;">What To Eat</h1><br>
-        <h2>Viennoiserie</h2>
+        <h1 style="text-align: center;font-size: 34px;font-family:'Pacificoregular'">What To Eat</h1><br>
+        <h2 style="font-family:'Courier New', Courier, monospace">Viennoiserie</h2>
         <hr style="height:1px;background-color: black;border:none;width:15%;">
         <div class="box-container"> 
             <!-- First row of boxes -->
             <div class="box">
-                <img src="image/croissants-wooden-cutting-board.jpg" alt="Item 1">
-                <p>Croissant</p>
+                <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
+                <p>Croissant<br> $4</p>
             </div>
             <div class="box">
-                <img src="image/kouign amann.jpg" alt="Item 2">
-                <p>Original Kouign Amann</p>
+                <img src="image/kouign amann.jpg" alt="Kouign Amann">
+                <p>Original Kouign Amann<br> $6</p>
             </div>
             <div class="box">
-                <img src="image/pain au chocolat.jpg" alt="Item 3">
-                <p>Pain Au Chocolat</p>
+                <img src="image/pain au chocolat.jpg" alt="Pain Au Chocolat">
+                <p>Pain Au Chocolat<br> $5.60</p>
             </div> 
 
             <!-- Second row of boxes -->
             <div class="box">
-                <img src="image/chocolate croissant.jpg" alt="Item 4">
-                <p>Chocolate Croissant</p>
+                <img src="image/chocolate croissant.jpg" alt="Chocolate Croissant">
+                <p>Chocolate Croissant<br> $6.50</p>
             </div>
             <div class="box">
-                <img src="image/almond croissant.jpg" alt="Item 5">
-                <p>Almond Croissant</p>
+                <img src="image/almond croissant.jpg" alt="Almond Croissant">
+                <p>Almond Croissant<br> $6.50</p>
             </div>
         </div>
     </section>
-
     <section>
-        <div id="buttons-container">
-            <button onclick="changeSliderItem(1)">Viennnoiserie</button>
-            <button onclick="changeSliderItem(2)">Pastry</button>
-            <button onclick="changeSliderItem(3)">Bread</button>
-        </div>
+        <br>
+        <h2 style="font-family:'Courier New', Courier, monospace">Pastry</h2>
+        <hr style="height:1px;background-color: black;border:none;width:15%;">
+        <div class="box-container"> 
+            <!-- First row of boxes -->
+            <div class="box">
+                <img src="image/close-up-view-delicious-cinnamon-rolls.jpg" alt="Cinnamon Rolls">
+                <p>Cinnamon Rolls<br> $4</p>
+            </div>
+            <div class="box">
+                <img src="image/closeup-fluffy-doughnuts-filled-with-jam-tray-table-lights.jpg" alt="Doughnut">
+                <p>Doughnut<br> $3.60</p>
+            </div>
+            <div class="box">
+                <img src="image/chocolate eclairs.jpg" alt="Chocolate Eclairs">
+                <p>Chocolate Eclairs<br> $8</p>
+            </div> 
 
-        <div id="slider-container">
-            <div id="slider-item1" class="slider-item">
-                <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
-                <p>Croissant</p>
-                <img src="image/almond croissant.jpg" alt="Chocolate Croissant">
-                <p>Almond Croissant</p>
-                <img src="image/chocolate croissant.jpg" alt="Almond Croissant">
-                <p>Chocolate Croissant</p>
-                <img src="image/pain au chocolat.jpg" alt="Pain Au Chocolat">
-                <p>Pain Au Chocolat</p>
-                <img src="image/kouign amann.jpg" alt="Kouign Amann">
-                <p>Kouign Amann</p>
-            </div>
-            <div id="slider-item2" class="slider-item">
-                <img src="image2.jpg" alt="Item 2">
-                <p>Item 2: Pastry</p>
-            </div>
-            <div id="slider-item3" class="slider-item">
-                <img src="image3.jpg" alt="Item 3">
-                <p>Item 3: Bread</p>
+            <!-- Second row of boxes -->
+            <div class="box">
+                <img src="image/Chocolate Tart.jpg" alt="chocolate Tart">
+                <p>Chocolate Tart<br> $8.50</p>
             </div>
         </div>
     </section>
+    <section>
+        <br>
+        <h2 style="font-family:'Courier New', Courier, monospace">Bread</h2>
+        <hr style="height:1px;background-color: black;border:none;width:15%;">
+        <div class="box-container"> 
+            <!-- First row of boxes -->
+            <div class="box">
+                <img src="image/baguette.jpg" alt="Baguette">
+                <p>Baguette<br> $5.40</p>
+            </div>
+            <div class="box">
+                <img src="image/sour dough.jpg" alt="SourDough">
+                <p>SourDough<br> $10.10</p>
+            </div>
+            <div class="box">
+                <img src="image/Rye Sourdough.jpg" alt="Rye Sourdough">
+                <p>Rye Sourdough<br> $12.90</p>
+            </div> 
+
+            <!-- Second row of boxes -->
+            <div class="box">
+                <img src="image/Bagel.jpg" alt="Bagel">
+                <p>Bagel<br> $4</p>
+            </div>
+        </div>
+    </section>
+    <section class="menu-background">
+        <video autoplay muted loop>
+            <source src="videos/pexels-eva-elijas-7236946 (Original).mp4" type="video/mp4">
+        </video>
+        <div class="menu-background-text">
+            <P class="textformenu">Indulge in the delightful world of pastries with our tempting selection! Treat yourself to the exquisite flavors and textures that our pastries have to offer.</P>
+            <img src="image/delivery.png">
+            <img src="image/location.png">
+            <img src="image/discount.png">
+            <form action="shop.html" post="get">
+                <button class="buttonformenu">Order Now!</button>
+            </form>
+        </div>
+    </section>
+    <br>
+    <div id="market-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Market Items</h2>
+            <ul id="market-items-list"></ul>
+        </div>
+    </div>
+    
+    <footer style="margin-top:70px">
+        <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
+        <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
+        <hr style="height:3px;background-color: black;border:none;width:35%;">
+        <div class="socialmedia2">
+            <h2>Follow Us On Social Media</h2>
+            <img src="image/instagram.png" alt="Instagram">
+            <img src="image/facebook.png" alt="Facebook">
+            <img src="image/twitter.png" alt="Facebook">
+        </div>>
+    </footer>
+
+    <script src="menujava.js"></script>
     <script>
-        let currentSlide = 1;
-
-        function showSlide(slideIndex) {
-            const slides = document.getElementsByClassName('slider-item');
-            if (slideIndex < 1) {
-                currentSlide = slides.length;
-            } else if (slideIndex > slides.length) {
-                currentSlide = 1;
-            } else {
-                currentSlide = slideIndex;
-            }
-
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-
-            slides[currentSlide - 1].style.display = 'flex';
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
         }
 
-        function changeSliderItem(index) {
-            showSlide(index);
+        function animateOnScroll() {
+            const boxes = document.querySelectorAll('.box');
+
+            boxes.forEach(box => {
+                if (isInViewport(box)) {
+                    box.classList.add('slide-in');
+                }
+            });
         }
+
+        // Trigger the animation on initial page load
+        animateOnScroll();
+
+        // Attach the animateOnScroll function to the scroll event
+        window.addEventListener('scroll', animateOnScroll);
     </script>
 </body>
 </html>

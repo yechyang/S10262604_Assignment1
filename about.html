@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="Remaining.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="icons">
+                <img src="image/menu.png" alt="Shop">
+                <img src="image/market.png" alt="Shop">
+            </div>
+            <div class="logo">
+                <img src="image/croissant.png" alt="KYC Bakery">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="Toprightbox">
+            <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
+            <div class="words">
+                <h1 style="font-family:'Pacificoregular';font-size: 30px;">About Us</h1>
+                <p>The name derived from french it means crescent or crescent of the moon. The origin of the croissant can actually be traced back to 13th century Austria, where it was called the kipferl, the German word for crescent.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section>
+        <div class="slider-background">
+            <video autoplay muted loop>
+                <source src="videos/dough_-_43653 (720p).mp4" type="video/mp4">
+            </video>
+            <div class="text-below-box">
+                <h2 style="font-size: 40px;font-weight: bold;font-family:'Pacificoregular'">Our Story</h2><br><br>
+                <div class="slider-bottom">
+                    <div class="slider-bottom-text" data-index="1">
+                        <p><strong style="font-size: 24px;font-family:'Courier New', Courier, monospace">Every Bite With Celebration</strong><br><br>Once upon a time, nestled in the heart of a bustling city, there was a small but enchanting bakery known as "KYC Baker". where we orchestrate a sweet symphony of flavors and textures in every pastry.</p>
+                    </div>
+                    <div class="slider-bottom-text" data-index="2">
+                        <p><strong style="font-size: 24px;font-family:'Courier New', Courier, monospace">The Journey</strong><br><br> Our commitment to quality begins at the source. With ingredients sourced from local farmers and global flavors that tantalize the palate, each pastry is a journey of flavors, connecting the rich tapestry of our community to the world.</p>
+                    </div>
+                    <div class="slider-bottom-text" data-index="3">
+                        <p><strong style="font-size: 24px;font-family:'Courier New', Courier, monospace">Creating a culture that did not exist before</strong><br><br> Our motive was not just limited to providing daily food, but more to fill the memories of people who came by. We continued to make efforts to build a new “bakery culture” whereby everyone enjoys bread any time at anywhere of their day.</p>
+                    </div>
+                </div>
+                
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 style="text-align:center;margin-top:80px;font-size: 36px;">Gallery</h1>
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="image/front-view-baker-spreading-flour-dough-composition.jpg" alt="Image 1">
+                <img src="image/baked-bun-with-black-copy-space-background.jpg" alt="Image 2">
+                <img src="image/background.jpg" alt="image 3">
+                <img src="image/high-angle-cook-whisking-mixture-bowl.jpg" alt="Image 3">
+                <img src="image/coffee-croissant-jam-wooden-table-french-breakfast-cafe-vertical-shot-selective-focus-croissant.jpg" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="margin-top:70px">
+        <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
+        <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
+        <hr style="height:3px;background-color: black;border:none;width:35%;">
+        <div class="socialmedia2">
+            <h2>Follow Us On Social Media</h2>
+            <img src="image/instagram.png" alt="Instagram">
+            <img src="image/facebook.png" alt="Facebook">
+            <img src="image/twitter.png" alt="Facebook">
+        </div>>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentIndex = 1;
+            showText(currentIndex);
+    
+            function showText(index) {
+                const texts = document.querySelectorAll(".slider-bottom-text");
+                texts.forEach((text) => {
+                    text.style.display = +text.getAttribute("data-index") === index ? "block" : "none";
+                });
+            }
+    
+            window.currentSlide = function (index) {
+                currentIndex = index;
+                showText(currentIndex);
+            };
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="aboutscript.js"></script>
+</body>
+</html>

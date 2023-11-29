@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="Remaining.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body class="shop-slider-background">
+    <header>
+        <nav class="menu">
+            <div class="icons">
+                <img src="image/menu.png" alt="Shop">
+                <img src="image/market.png" alt="Shop">
+            </div>
+            <div class="logo">
+                <img src="image/croissant.png" alt="KYC Bakery">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="text-align: center;margin-bottom:0px; margin-top:60px;color:whitesmoke">Order Form</h2>
+    <section class="boxContainer">
+        <form action="payment.html" method="get">
+            <div class="big-empty-box">
+                <div class="inputbox">
+                    <label style="font-size: 20px; margin-right:5px;text-align:center;" for="items1">Item1:</label>
+                    <select name="items1" id="items1" required>
+                        <option value="" disabled selected hidden>Select a item</option>
+                        <optgroup label="Viennoiserie">
+                            <option value="Croissant">Croissant</option>
+                            <option value="Original Kouign Amann">Original Kouign Amann</option>
+                            <option value="Pain Au Chocolat">Pain Au Chocolat</option>
+                            <option value="Chocolate Croissant">Chocolate Croissant</option>
+                            <option value="Almond Croissant">Almond Croissant</option>
+                        </optgroup>
+                        <optgroup label="Pastry">
+                            <option value="Cinnamon Rolls">Cinnamon Rolls</option>
+                            <option value="Doughnut">Doughnut</option>
+                            <option value="Chocolate Eclairs">Chocolate Eclairs</option>
+                            <option value="Chocolate Tart">Chocolate Tart</option>
+                        </optgroup>
+                        <optgroup label="Bread">
+                            <option value="Baguette">Baguette</option>
+                            <option value="SourDough">SourDough</option>
+                            <option value="Rye Sourdough">Rye Sourdough</option>
+                            <option value="Bagel">Bagel</option>
+                        </optgroup>
+                    </select>
+                    <label style="font-size: 20px; margin-right:5px;text-align:center; margin-left:30px" for="numberofitems1">Number:</label>
+                    <input type="number" name="numberofitems1" id="numberofitems1" min="1" max="5" value="1" required>
+                </div>
+                <div class="inputbox">
+                    <label style="font-size: 20px; margin-right:5px;text-align:center;" for="items2">Item2:</label>
+                    <select name="items2" id="items2">
+                        <option value="" disabled selected hidden>Select a item</option>
+                        <optgroup label="Viennoiserie">
+                            <option value="Croissant">Croissant</option>
+                            <option value="Original Kouign Amann">Original Kouign Amann</option>
+                            <option value="Pain Au Chocolat">Pain Au Chocolat</option>
+                            <option value="Chocolate Croissant">Chocolate Croissant</option>
+                            <option value="Almond Croissant">Almond Croissant</option>
+                        </optgroup>
+                        <optgroup label="Pastry">
+                            <option value="Cinnamon Rolls">Cinnamon Rolls</option>
+                            <option value="Doughnut">Doughnut</option>
+                            <option value="Chocolate Eclairs">Chocolate Eclairs</option>
+                            <option value="Chocolate Tart">Chocolate Tart</option>
+                        </optgroup>
+                        <optgroup label="Bread">
+                            <option value="Baguette">Baguette</option>
+                            <option value="SourDough">SourDough</option>
+                            <option value="Rye Sourdough">Rye Sourdough</option>
+                            <option value="Bagel">Bagel</option>
+                        </optgroup>
+                    </select>
+
+                    <label style="font-size: 20px; margin-right:5px;text-align:center; margin-left:30px" for="numberofitems2">Number:</label>
+                    <input type="number" name="numberofitems2" id="numberofitems2" min="1" max="5" value="1" required>
+                </div>
+
+                <div class="inputbox">
+                    <p style="font-size:20px;margin-bottom:5px;">Instructions:</p>
+                    <textarea placeholder="Type your instructions here" class="textarea-style"></textarea>
+                </div>
+
+                <div class="inputbox">
+                    <p style="font-size:20px;margin-bottom:5px;">Items Price:</p>
+                    <p></p>
+                </div>
+
+                <div class="inputbox">
+                    <label style="font-size: 20px;">Order type:</label><br><br>
+                    <input type="radio" name="aa" value="radio1"> Pick Up <br>
+                    <input type="radio" name="aa" value="radio2"> Delivery
+                </div>
+                <div class="inputbox"><p style="font-size: 20px;margin-bottom:5px;">Date</p><input type="date" placeholder="DD/MM/YYY" required></div>
+                <h1 style="font-weight: bold;margin-left:35px">Customer Details</h1>
+                <hr style="height:1.5px;background-color: black;border:none;width:100%;margin:0px;">
+                <div class="inputbox">
+                    <label style="font-size: 20px; margin-right:7px;" for="items">Name:</label>
+                    <input type="text" placeholder="Enter your Last Name" required><input type="text" placeholder="Enter your First Name" required>
+                    <br><br><br>
+                    <label style="font-size: 20px; margin-right:10px;" for="items">Email:</label>
+                    <input type="text" placeholder="Enter Email" required>
+                    <br><br><br>
+                    <label style="font-size: 20px; margin-right:5px;" for="items">Phone:</label>
+                    <input type="text" placeholder="Enter Phone Number" required>
+                    <br><br><br>
+                    <label style="font-size: 20px; margin-right:10px;" for="items">Address:</label>
+                    <input type="text" placeholder="Enter Address" required>
+                </div>
+                <div class="inputbox">
+                    <button type="submit">Order</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer style="margin-top:70px;color:whitesmoke;">
+        <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
+        <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
+        <hr style="height:3px;background-color: white;border:none;width:35%;">
+        <div class="socialmedia2">
+            <h2>Follow Us On Social Media</h2>
+            <img src="image/instagram.png" alt="Instagram">
+            <img src="image/facebook.png" alt="Facebook">
+            <img src="image/twitter.png" alt="Facebook">
+        </div>>
+    </footer>
+
+    <script src="shopscript.js"></script>
+</body>
+</html>
