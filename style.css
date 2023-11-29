@@ -18,13 +18,14 @@ body {
 
 .socialmedia2{
     text-align: center;
-    margin-right: 10px;
-    margin-top: 15px;
+    display: block;
+    margin-left:85px;
+    margin-top: 40px;
 }
 
 .socialmedia2 img{
     max-width:30px;
-    margin-right:15px
+    margin-right:80px;
 }
 
 .logo {
@@ -38,6 +39,7 @@ h1{
     font-size:28px;
     font-weight:bold;
     text-align:center;
+    font-family:'Pacificoregular';
 }
 
 .menu {
@@ -47,6 +49,7 @@ h1{
 .menu ul {
     list-style: none;
     padding: 0;
+    margin-bottom:4px;
 }
 .menu ul li {
     
@@ -58,8 +61,9 @@ h1{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 10px;
+    font-family:'Pacificoregular';
 }
 
 .menu ul li a:hover{
@@ -99,6 +103,7 @@ h1{
     white-space: nowrap;
     color: #fff; /* Set text color */
     font-size: 22px;
+    font-family:'verdana'
 }
 
 @keyframes slide {
@@ -202,6 +207,7 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family:'verdana';
 }
 
 .background{
@@ -292,28 +298,98 @@ h1{
     background-color: #717171;
 }
 
+footer {
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.line-with-gap {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.line-with-gap::before,
+.line-with-gap::after {
+    content: "";
+    display: inline-block;
+    width: 35%; 
+    height: 3px; 
+    background-color: black; 
+}
+
+.line-with-gap::before {
+    margin-right: 8%;
+}
+
+.line-with-gap::after {
+    margin-left: 8%;
+}
+
+.text-in-middle {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0; /* Adjust padding as needed */
+    background-color: #fafdf3;
+    font-size: 24px;
+    font-family:'Pacificoregular'
+}
 
 
-@media screen and (max-width: 440px) {
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-links-left {
+    text-align: left;
+    margin-left:70px;
+}
+
+.footer-links-left a {
+    display:block;
+    margin-right: 10px; /* Adjust margin as needed */
+    text-decoration: none;
+    color: black; /* Adjust color as needed */
+    margin-bottom: 10px;
+}
+
+.footer-link-right {
+    text-align: right;
+    margin-right:160px
+}
+
+.footer-link-right a {
+    display: block;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    text-decoration: none;
+    color: black; /* Adjust color as needed */
+}
+
+.footer-text{
+    font-weight:bold;
+    font-size: 26px;
+    margin-right:0;
+    margin-bottom:0;
+}
+
+@media screen and (max-width: 500px) {
     body{
         font-size:12px;
         margin:0;
     }
-    .socialmedia{
-        text-align: end;
-        margin: 5px 10px 0 0;
-    }
-
-    .socialmedia img {
-        max-width: 25px;
-        margin-right: 5px;
-    }
     .socialmedia2{
         text-align:center;
-        margin:0;
+        margin-left:5px
     }
     .socialmedia2 img{
         max-width: 25px;
+        margin-right:25px;
+        margin-left:25px
     }
 
     .logo img {
@@ -411,6 +487,37 @@ h1{
         margin: 0 2px;
         height: 10px; /* Decrease the height of the dot */
         width: 10px; /* Decrease the width of the dot */
+    }
+    
+    .line-with-gap::before,
+    .line-with-gap::after {
+        content: "";
+        display: inline-block;
+        width: 20%; 
+    }
+    
+    .text-in-middle {
+        font-size: 18px;
+    }
+    
+    .footer-links-left {
+        text-align: left;
+        margin-top:20px;
+        margin-left:100px;
+    }
+    
+    .footer-link-right {
+        text-align: right;
+        margin-top:20px;
+        margin-right:100px
+    }
+
+    .footer-text{
+        font-size: 18px;
+    }
+
+    footer p{
+        font-size:14px;
     }
 }
 

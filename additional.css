@@ -84,7 +84,7 @@ button[type="submit"]:hover{
 }
 
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 500px){
     .payment-big-empty-box{
         width: 340px;
         height: 500px;
