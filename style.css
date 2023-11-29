@@ -292,6 +292,8 @@ h1{
     background-color: #717171;
 }
 
+
+
 @media screen and (max-width: 440px) {
     body{
         font-size:12px;

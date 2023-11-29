@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="icon" href="image/croissant.png" type="image/png">
     <link rel="stylesheet" href="Remaining.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
@@ -54,7 +55,7 @@
                             <option value="Bagel">Bagel</option>
                         </optgroup>
                     </select>
-                    <label style="font-size: 20px; margin-right:5px;text-align:center; margin-left:30px" for="numberofitems1">Number:</label>
+                    <label class="menu-label-text" for="numberofitems1">Number:</label>
                     <input type="number" name="numberofitems1" id="numberofitems1" min="1" max="5" value="1" required>
                 </div>
                 <div class="inputbox">
@@ -82,7 +83,7 @@
                         </optgroup>
                     </select>
 
-                    <label style="font-size: 20px; margin-right:5px;text-align:center; margin-left:30px" for="numberofitems2">Number:</label>
+                    <label class="menu-label-text" for="numberofitems2">Number:</label>
                     <input type="number" name="numberofitems2" id="numberofitems2" min="1" max="5" value="1" required>
                 </div>
 
@@ -101,7 +102,7 @@
                     <input type="radio" name="aa" value="radio1"> Pick Up <br>
                     <input type="radio" name="aa" value="radio2"> Delivery
                 </div>
-                <div class="inputbox"><p style="font-size: 20px;margin-bottom:5px;">Date</p><input type="date" placeholder="DD/MM/YYY" required></div>
+                <div class="inputbox"><p style="font-size: 20px;margin-bottom:5px;">Date</p><input type="date" placeholder="DD/MM/YYY" required id="dateInput"></div>
                 <h1 style="font-weight: bold;margin-left:35px">Customer Details</h1>
                 <hr style="height:1.5px;background-color: black;border:none;width:100%;margin:0px;">
                 <div class="inputbox">
@@ -136,6 +137,14 @@
         </div>>
     </footer>
 
+
+    <script>
+        // Get today's date in the format YYYY-MM-DD
+        const today = new Date().toISOString().split('T')[0];
+
+        // Set the minimum date for the input
+        document.getElementById('dateInput').min = today;
+    </script>
     <script src="shopscript.js"></script>
 </body>
 </html>

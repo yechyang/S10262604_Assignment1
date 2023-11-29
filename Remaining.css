@@ -142,6 +142,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.menu-label-text{
+    font-size:20px;
+    margin-right:5px;
+    text-align:center;
+    margin-left:30px
+}
+
 .menu-background-text img{
     max-width: 80px;
     margin-right:60px;
@@ -497,6 +504,23 @@ video {
     background-color: #717171;
 }
 
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    height:700px
+}
+
+.gallery {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.gallery img {
+    margin-right:50px;
+    width: 40%;
+    height: auto;
+}
+
 .contact-boxContainer{
     display: flex;
     /*justify-content: center;*/
@@ -536,7 +560,6 @@ video {
     height: 600px;
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 20px;
     margin-left:60px
 }
 
@@ -550,13 +573,12 @@ video {
     max-width: 100%; 
     border-radius: 10px; 
     margin-bottom: 100px;
-    margin-top:20px
 }
 
 .images-contact-container iframe {
     max-width: 100%; 
     border-radius: 10px; 
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top:20px;
 }
 
@@ -569,35 +591,6 @@ video {
     border-radius: 10px;
     background-color: rgb(250, 250, 250);
     margin-bottom: 20px;
-}
-
-
-.payment-boxContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:30px;
-}
-
-.payment-big-empty-box{
-    width: 600px;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 25px;
-}
-
-.insidepayment{
-    margin-top:70px;
-    margin-left:80px;
-    margin-bottom: 40px;
-}
-
-.insidepayment input[type="text"]{
-    padding: 10px; 
-    font-size: 12px; 
-    border-radius:10px;
-    background-color:rgb(250, 250, 250);
-    margin-right:30px;
 }
 
 .socialmedia2{
@@ -807,13 +800,10 @@ video {
     }
 
     .slider-background{
-        background-image: url('image/autumn-sunset-illuminates-famous-city-skyline-panorama-generated-by-ai_188544-23673.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-color: transparent;
-        margin-right:20px;
-        margin-left:20px;
         padding: 0;
         position: relative;
         height: 80vh;
@@ -862,16 +852,19 @@ video {
         margin: 20px auto;
     }
 
+    .image-contact-container p{
+        margin: 20px;
+        margin-top:0;
+    }
+
     .images-contact-container {
         width: 100%;
         height: auto; 
         margin: 20px 0; 
     }
 
-    .images-contact-container img {
-        max-width: 100%;
-        margin-bottom: 20px; 
-        margin-top: 10px; 
+    .images-contact-container iframe {
+        height:450px
     }
 
     .textarea-contact-style{
@@ -889,13 +882,20 @@ video {
     }
     
     .menu-background-text{
+        width:300px;
         text-align:center;
-        font-size: 18px;
+        font-size: 16px;
         color: ghostwhite;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .menu-label-text{
+        font-size:16px;
+        margin-right:5px;
+        margin-left:5px;
     }
     
     .menu-background-text img{
@@ -907,23 +907,17 @@ video {
         display: inline-block;
         filter: brightness(0) invert(1);
     }
+
+    .gallery-container {
+        overflow: hidden;
+        width: 100%;
+        height:250px;
+    }
+
+    .gallery img {
+        margin-right:25px;
+    }
+
 }
 
-
-.gallery-container {
-    overflow: hidden;
-    width: 100%;
-    height:700px
-}
-
-.gallery {
-    display: flex;
-    transition: transform 1s ease-in-out;
-}
-
-.gallery img {
-    margin-right:50px;
-    width: 40%;
-    height: auto;
-}
 

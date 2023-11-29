@@ -9,6 +9,11 @@ $(document).ready(function () {
     function calculateTranslateValue(index) {
         let slideDistanceMultiplier = 0.608; 
 
+
+        if (window.matchMedia('(max-width: 440px)').matches) {
+            slideDistanceMultiplier = 0.20; // Adjust the multiplier for smaller screens
+        }
+
         return -index * slideWidth * slideDistanceMultiplier;
     }
 
