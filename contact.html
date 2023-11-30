@@ -29,12 +29,26 @@
         </nav>
     </header>
 
-    <section class="contact-boxContainer">
-        <div class="contact-big-empty-box">
-            <form action="thankyou.html" post="get">
+    <section>
+        <div class="contact-background">
+            <video autoplay muted loop>
+                <source src="videos/pexels-roman-odintsov-5951652 (2160p).mp4" type="video/mp4">
+            </video>
+            <h1>Contact</h1>
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <div class="left-contact-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4057162128338!2d103.8204185385312!3d1.2872436812096346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da197fd63fc601%3A0x7057355375439ced!2s95C%20Henderson%20Rd%2C%20Singapore%20153095!5e0!3m2!1sen!2ssg!4v1701155354794!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="right-contact-container">
+            <form action="#" post="get">
                 <div class="insidecontact">
                     <h1 style="font-family:'Courier New', Courier, monospace;font-size: 30px;">We'd love to hear from you</h1>
                     <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;">Have something to share? Want to ask us a question? Drop us a note, and we'll be in touch with you as soon as we're done baking!</p>
+                    <br><p>KYC Bakery Pte Ltd</p>
+                    <p>(Head Office)</p>
                 </div>
                 <div class="insidecontact">
                     <label style="font-size: 20px;">Name:</label>
@@ -47,28 +61,20 @@
                 </div>
                 <div class="insidecontact">
                     <label style="font-size: 20px;">Email:</label>
-                    <input type="text" placeholder="Enter Email"required><br><br>
+                    <input type="text" placeholder="Enter Email"><br><br>
                     <br>
                     <p style="font-size: 20px;">Message:</p>
-                    <textarea placeholder="Type your Message here" class="textarea-contact-style" required></textarea>
+                    <textarea placeholder="Type your Message here" class="textarea-contact-style"></textarea>
                     <br><br><br>
                     <input type="checkbox" name="aa" value="checkbox1"> Terms and condition apply
                 </div>
                 <div class="insidecontact">
-                    <button type="submit">Send</button>
+                    <button type="submit" onclick="showPopup()">Send</button>
                 </div>
-            </form>                                         
-        </div>
-        <div class="image-contact-container">
-            <div class="images-contact-container ">
-                <img src="image/flat-lay-vegan-baked-products-arrangement.jpg" alt="Image 1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4057162128338!2d103.8204185385312!3d1.2872436812096346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da197fd63fc601%3A0x7057355375439ced!2s95C%20Henderson%20Rd%2C%20Singapore%20153095!5e0!3m2!1sen!2ssg!4v1701155354794!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-            </div>
-
-            <p>KYC Bakery Pte Ltd</p><p style="margin-top:0;">(Head Office)</p>
+            </form>
         </div>
     </section>
+
     <div id="market-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -80,6 +86,13 @@
             </form>
         </div>
     </div>
+
+    <div id="myModal" class="popup-contact">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1>Response received</h1>
+        <p>Your valuable feedback will help us refine the website interface and enhance its user-friendliness.</p>
+    </div>
+
     <hr>
     <footer>
         <div class="line-with-gap">
@@ -108,5 +121,6 @@
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
     <script src="menujava.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

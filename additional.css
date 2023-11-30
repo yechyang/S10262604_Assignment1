@@ -70,7 +70,7 @@ button[type="submit"]:hover{
     margin-right:15px
 }
 
-.thankyou-slider-background{
+.final-background{
     background-image: url('image/bread-arrangement-cloth.jpg');
     background-size: cover;
     background-position: center;
@@ -83,6 +83,18 @@ button[type="submit"]:hover{
     color:black;
 }
 
+.feedback-background{
+    background-image: url('image/autumn-sunset-illuminates-famous-city-skyline-panorama-generated-by-ai_188544-23673.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    display:block;
+    z-index: -1;
+    color:black;
+}
 
 @media screen and (max-width: 500px){
     .payment-big-empty-box{
