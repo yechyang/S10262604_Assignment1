@@ -3,7 +3,7 @@ $(document).ready(function () {
     let gallery = $('.gallery');
     let totalImages = $('.gallery img').length;
     let slideWidth = $('.gallery img').width();
-    let maxSlides = 3;
+    let maxSlides = 5;
     let slideCounter = 0;
 
     function calculateTranslateValue(index) {
@@ -31,4 +31,5 @@ $(document).ready(function () {
     }
 
     let slideInterval = setInterval(slideGallery, 3000); // Change slide every 3 seconds (adjust as needed)
+    typeText();
 });

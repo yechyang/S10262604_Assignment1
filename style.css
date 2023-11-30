@@ -9,18 +9,21 @@ body {
     text-align: end;
     margin-right: 10px;
     margin-top: 15px;
+    position: relative;
 }
 
 .icons img{
     max-width: 30px;
-    margin-right:15px
+    margin-right:15px;
+    cursor: pointer;
 }
 
 .socialmedia2{
     text-align: center;
     display: block;
-    margin-left:85px;
+    margin-left:50px;
     margin-top: 40px;
+    margin-bottom:40px;
 }
 
 .socialmedia2 img{
@@ -232,25 +235,6 @@ h1{
     left: 0;
 }
 
-.dropdown-content {
-    display: none; /* Hide dropdown content initially */
-    position: absolute;
-    background-color: #f2f2f2;
-    min-width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content p {
-    padding: 10px;
-    margin: 0;
-}
-
-/* Create the hover effect to show the dropdown content */
-.menu ul li:hover .dropdown-content {
-    display: block;
-}
-
 .slider-container {
     width: 100%;
     margin: 0 -150px;
@@ -258,6 +242,33 @@ h1{
     overflow:hidden;
     position: relative;
     background:transparent;
+}
+
+.popup-menu {
+    text-align: center;
+    width:100px;
+    display: none;
+    position: fixed;
+    top: 60px; /* Adjust the top position as needed */
+    right: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    padding: 10px;
+    z-index: 1;
+    margin-right: 30px;
+}
+
+.popup-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.popup-menu a:hover {
+    color: #000000;
 }
 
 .slider-text {
@@ -339,7 +350,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -355,17 +366,17 @@ footer {
     margin-right: 10px; /* Adjust margin as needed */
     text-decoration: none;
     color: black; /* Adjust color as needed */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-link-right {
     text-align: right;
-    margin-right:160px
+    margin-right:150px
 }
 
 .footer-link-right a {
     display: block;
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
     text-decoration: none;
     color: black; /* Adjust color as needed */
 }

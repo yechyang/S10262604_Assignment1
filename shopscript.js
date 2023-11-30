@@ -14,29 +14,6 @@ let items = {
     "Bagel": 4,
 }
 
-/*document.addEventListener('DOMContentLoaded', function () {
-    // Get references to the relevant elements
-    const itemSelect = document.getElementById('items');
-    const numberSelect = document.getElementById('numberofitems');
-    const totalPriceParagraph = document.querySelector('.inputbox p:nth-child(2)');
-
-    // Attach an event listener to the form for the 'change' event
-    document.querySelector('form').addEventListener('change', function () {
-        // Get the selected item and number of items
-        const selectedItem = itemSelect.value;
-        const numberOfItems = parseInt(numberSelect.value);
-
-        // Check if the selected item is in the 'items' object
-        if (selectedItem in items) {
-            // Calculate the total price
-            const totalPrice = items[selectedItem] * numberOfItems;
-
-            // Display the total price in the appropriate inputbox
-            totalPriceParagraph.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
-        }
-    });
-});*/
-
 document.addEventListener('DOMContentLoaded', function () {
     // Get references to the relevant elements
     let itemSelect = document.getElementById('items1');

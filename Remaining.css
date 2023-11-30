@@ -60,6 +60,20 @@ body {
     box-sizing: border-box;
 }
 
+.modal-content button[type="submit"] {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(35, 116, 85);
+    font-size: 16px;
+    border: none;
+    border-radius:5px;
+    position:relative;
+    color: whitesmoke;
+    transition: color 0.3s ease;
+}
+
 #market-items-list {
     max-height: 500px; /* Set the maximum height for scrollability */
     overflow-y: auto; /* Enable vertical scrolling if the list exceeds the max height */
@@ -229,6 +243,7 @@ h2{
 
 
 .box p {
+    margin-bottom:0;
     margin-top: 10px;
     font-weight: bold;
 } 
@@ -400,29 +415,48 @@ button[type="submit"]:hover{
     color:darkgray;
 }
 
-.Toprightbox{
+@keyframes splitAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
+
+.about-container {
+    max-width:1000px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    animation: splitAnimation 3s forwards;
 }
 
-.Toprightbox img{
-    margin-left:auto;
-    max-width:30%;
-    border-radius:25px;
-    margin-right: 40px;
-    margin-top:60px;
+.about-container img {
+    width: 60%; 
+    height: auto; 
+    display: block; 
+    border-radius:20px;
+    margin-top:25px;
 }
 
-.words{
-    text-align:center;
-    width: 50%; 
-    padding: 20px; 
-    margin-top: 30px;
-    margin-left:40px;
-    margin-right:50px;
-    margin-bottom:70px;
+.about-container p{
+    margin: 20px 0;
+    font-size: 18px;
+    animation: splitAnimation 3s forwards;
 }
+
+.about-container h1{
+    margin-bottom:0px;
+    font-family:'Pacificoregular';
+    font-size:36px;
+    animation: splitAnimation 3s forwards;
+}
+
 
 .slider-background{
     /*background-image: url('image/autumn-sunset-illuminates-famous-city-skyline-panorama-generated-by-ai_188544-23673.jpg');*/
@@ -597,8 +631,9 @@ video {
 .socialmedia2{
     text-align: center;
     display: block;
-    margin-left:85px;
+    margin-left:50px;
     margin-top: 40px;
+    margin-bottom:40px;
 }
 
 .socialmedia2 img{
@@ -647,7 +682,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -660,20 +695,20 @@ footer {
 
 .footer-links-left a {
     display:block;
-    margin-right: 20px; /* Adjust margin as needed */
+    margin-right: 10px; /* Adjust margin as needed */
     text-decoration: none;
     color: black; /* Adjust color as needed */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-link-right {
     text-align: right;
-    margin-right:160px
+    margin-right:150px
 }
 
 .footer-link-right a {
     display: block;
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
     text-decoration: none;
     color: black; /* Adjust color as needed */
 }   
@@ -716,7 +751,7 @@ footer {
 
 .footer-container-white {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -729,20 +764,20 @@ footer {
 
 .footer-links-left-white a {
     display:block;
-    margin-right: 20px; /* Adjust margin as needed */
+    margin-right: 10px; /* Adjust margin as needed */
     text-decoration: none;
     color: whitesmoke; /* Adjust color as needed */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-link-right-white {
     text-align: right;
-    margin-right:160px
+    margin-right:150px
 }
 
 .footer-link-right-white a {
     display: block;
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
     text-decoration: none;
     color: whitesmoke; /* Adjust color as needed */
 }

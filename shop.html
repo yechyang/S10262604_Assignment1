@@ -13,7 +13,8 @@
         <nav class="menu">
             <div class="icons">
                 <img src="image/menu.png" alt="Shop">
-                <img src="image/market.png" alt="Shop">
+                <img src="image/market.png" alt="Shop" id="market-icon">
+                <span id="market-counter">0</span>
             </div>
             <div class="logo">
                 <img src="image/croissant.png" alt="KYC Bakery">
@@ -125,6 +126,18 @@
         </form>
     </section>
 
+    <div id="market-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Market Items</h2>
+            <ul id="market-items-list"></ul>
+            <div>Total Amount: <span id="total-amount">$0.00</span></div>
+            <form action="payment.html" method="get">
+                <button type="submit">Order</button>
+            </form>
+        </div>
+    </div>
+
     <br><br><br>
     <footer>
         <div class="line-with-gap-white">
@@ -132,27 +145,28 @@
         </div>
         <br>
         <p class="footer-text-white">Follow Us on Social Media!</p>
-        <div class="socialmedia2">
-            <img src="image/instagram.png" alt="Instagram">
-            <img src="image/facebook.png" alt="Facebook">
-            <img src="image/twitter.png" alt="Facebook">
-            <div class="footer-container-white">
-                <div class="footer-links-left-white">
-                    <a href="about.html">About</a>
-                    <a href="about.html">Terms and Condition</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-link-right-white">
-                    <a href="shop.html">Shop</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">Policy</a>
-                </div>
+        <div class="footer-container-white">
+            <div class="footer-links-left-white">
+                <a href="about.html">About</a>
+                <a href="about.html">Terms and Condition</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialmedia2">
+                <img src="image/instagram.png" alt="Instagram">
+                <img src="image/facebook.png" alt="Facebook">
+                <img src="image/twitter.png" alt="Facebook">
+            </div>
+            <div class="footer-link-right-white">
+                <a href="shop.html">Shop</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">Policy</a>
             </div>
         </div>
         <p style="text-align: center;color:whitesmoke">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;color:whitesmoke">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
 
+    <script src="menujava.js"></script>
     <script>
         // Get today's date in the format YYYY-MM-DD
         const today = new Date().toISOString().split('T')[0];

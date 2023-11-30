@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Bakery</title>
-    <link rel="icon" href="image/croissant.png" type="image/png">
+    <link rel="icon" href="image/croissant.png" type="image/png"> <!--favicon-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css"> <!-- -->
 </head>
 <body>
-    <header>
+    <header> <!--Creating a header for my website with navigation-->
+        <!--Icons alongside my header-->
         <div class="icons">
-            <img src="image/menu.png" alt="Shop">
-            <img src="image/market.png" alt="Shop">
+            <img id="menuIcon" src="image/menu.png" alt="Shop" onclick="toggleMenu()" onmouseover="showMenu()" onmouseout="hideMenu()">
+            <img src="image/market.png" alt="Market">
         </div>
         <div class="logo">
             <img src="image/croissant.png" alt="Pastry shop">
         </div>
         <h1>KYC Bakery</h1>
-        <nav class="menu">
+        <nav class="menu"> <!--Navigation bar to navigate around the website-->
             <ul>
-                <li class="dropdown">
-                    <a href="#">Home</a>
-                    <div class="dropdown-content">
-                        <p>Welcome to the Home Page</p>
-                    </div>
-                </li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
@@ -33,38 +29,40 @@
             </ul>
         </nav>
         <br>
-        <div class="background-responsive-img">
+        <div class="background-responsive-img"> <!--Background image to show what this website is for-->
             <div class="discount-text-container">
                 <div class="discount-text">
-                    <p>20% Discount off any items</p>
+                    <p>20% Discount off any items today!</p> <!--Discount for user that buy today-->
                 </div>
             </div>
+            <!--Using words that might attract user-->
             <h2 style="color:ghostwhite; text-align:center; margin-top:250px; font-size: 40px;font-family:'Courier New', Courier, monospace">KYC Bakery</h2>
             <div class="text_above_button"><p>You can't buy happiness, but you can buy freshly baked goodies, and that's pretty much the same thing!</p></div>
             <form action="shop.html" method="get">
-                <button class="button">Order Now!</button>
+                <button class="button">Order Now!</button> <!--having the call to action to lead them to order page-->
             </form>
         </div>
     </header>
     <br>
     <br>
-    <section>
-        <div class="box-container">
-            <a href="menu.html" class="box">
+    <section> <!--Section created to display images and appealing text of notable items that KYC Bakery sells-->
+        <div class="box-container"> <!--Contain the boxes -->
+            <!--Using of a href to let user click leading them to menu page-->
+            <a href="menu.html" class="box"> <!--Box 1-->
                 <h2 style="color:rgb(35, 116, 85)">Cinnamon Rolls</h2>
                 <img src="image/close-up-view-delicious-cinnamon-rolls.jpg" Class="Cinnamon Roll" alt="Cinnamon Roll">
                 <div class="box-text">
                     <p>Indulge in a swirl of happiness with our mouthwatering cinnamon rolls</p>
                 </div>
             </a>
-            <a href="menu.html" class="box">
+            <a href="menu.html" class="box"><!--Box 2-->
                 <h2 style="color:rgb(35, 116, 85)">Croissant</h2>
                 <img src="image/croissants-wooden-cutting-board.jpg" Class="Croissant" alt="Croissant">
                 <div class="box-text">
                     <p>Immerse yourself in the delicate layers of golden, flaky pastry that cradle a symphony of rich, buttery goodness. </p>
                 </div>
             </a>
-            <a href="menu.html" class="box">
+            <a href="menu.html" class="box"><!--Box 3-->
                 <h2 style="color:rgb(35, 116, 85)">Doughnut</h2>
                 <img src="image/closeup-fluffy-doughnuts-filled-with-jam-tray-table-lights.jpg" Class="Donut" alt="Donut">
                 <div class="box-text">
@@ -117,27 +115,54 @@
         </div>
         <br>
         <p class="footer-text">Follow Us on Social Media!</p>
-        <div class="socialmedia2">
-            <img src="image/instagram.png" alt="Instagram">
-            <img src="image/facebook.png" alt="Facebook">
-            <img src="image/twitter.png" alt="Facebook">
-            <div class="footer-container">
-                <div class="footer-links-left">
-                    <a href="about.html">About</a>
-                    <a href="about.html">Terms and Condition</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-link-right">
-                    <a href="shop.html">Shop</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">Policy</a>
-                </div>
+        <div class="footer-container">
+            <div class="footer-links-left">
+                <a href="about.html">About</a>
+                <a href="about.html">Terms and Condition</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialmedia2">
+                <img src="image/instagram.png" alt="Instagram">
+                <img src="image/facebook.png" alt="Facebook">
+                <img src="image/twitter.png" alt="Facebook">
+            </div>
+            <div class="footer-link-right">
+                <a href="shop.html">Shop</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">Policy</a>
             </div>
         </div>
         <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
 
+    <div id="popupMenu" class="popup-menu">
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script> 
+    //when clicking the Menu icon ontop
+    function toggleMenu() { 
+        var menu = document.getElementById("popupMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    //When Hovering the Menu icon Ontop it will dropdown 
+    function showMenu() {
+        var menu = document.getElementById("popupMenu");
+        menu.style.display = "block";
+    }
+
+    //It will retract the dropdwon
+    function hideMenu() {
+        var menu = document.getElementById("popupMenu");
+        menu.style.display = "none";
+    }
+    </script>
     <script src="index.js"></script>
+
 </body>
 </html>
