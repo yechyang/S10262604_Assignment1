@@ -6,9 +6,14 @@
     <title>KYC Bakery</title>
     <link rel="icon" href="image/croissant.png" type="image/png"> <!--favicon-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css"> <!-- -->
+    <link rel="stylesheet" href="normalize.css"> 
 </head>
-<body>
+<body data-page="home">
+    <div class="loading-page" id="loadingPage">
+        <div class="loader"></div>
+        <p class="loading-text">Loading...</p>
+    </div>
+
     <header> <!--Creating a header for my website with navigation-->
         <!--Icons alongside my header-->
         <div class="icons">
@@ -32,7 +37,7 @@
         <div class="background-responsive-img"> <!--Background image to show what this website is for-->
             <div class="discount-text-container">
                 <div class="discount-text">
-                    <p>20% Discount off any items today!</p> <!--Discount for user that buy today-->
+                    <p>20% Discount off entire website</p> <!--Discount for user that buy today-->
                 </div>
             </div>
             <!--Using words that might attract user-->
@@ -73,26 +78,26 @@
     </section>
     <br>
     <br>
-    <section>
+    <section> <!--Section with video and slider text on missions and visions-->
         <div class="background">
-            <video autoplay muted loop>
+            <video autoplay muted loop> <!--Muting the video and looping it-->
                 <source src="videos/pexels-ron-lach-8430966 (1080p).mp4" type="video/mp4">
             </video>
-            <div class="text-below-box">
+            <div class="text-below-box"> 
                 <h2 style="font-size: 30px;font-weight: bold;">Visions And Missions</h2>
-                <div class="slider-container">
-                    <div class="slider-text" data-index="1">
+                <div class="slider-container"> <!--The slider with 3 different text on missions and visions-->
+                    <div class="slider-text" data-index="1"> <!--Slide1-->
                         <p><strong>Commitment:</strong> Our commitment is to deliver a sensory experience of freshness, quality, and unparalleled taste in every loaf</p>
                     </div>
-                    <div class="slider-text" data-index="2">
+                    <div class="slider-text" data-index="2"> <!--Slide2-->
                         <p><strong>Creativity:</strong> We strive to satisfy your sweet tooth through our variety of delectable pastries and cakes, made with love, creativity, and the finest natural ingredients.</p>
                     </div>
-                    <div class="slider-text" data-index="3">
+                    <div class="slider-text" data-index="3"> <!--Slide3-->
                         <p><strong>Authenticity:</strong> Our purpose is to bake fresh, authentic, and scrumptious bread, while promoting healthy eating and creating a sustainable future.</p>
                     </div>
                 </div>
                 
-                <div class="dots-container">
+                <div class="dots-container"> <!--Dots for the user to click to navigate around the 3 text using javascript-->
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -101,41 +106,44 @@
         </div>
         <br>
         <form action="shop.html" method="get">
-            <div class="second-button-container">
+            <div class="second-button-container"><!--Call to action button leading to shop page-->
                 <p style="text-align: center;font-size: 18px;">What Are You Waiting For? Indulge in our delectable pastries today and enjoy an extra 10% discount!</p>
-                <button class="second-button">Order Now!</button>
+                <button class="second-button">Order Now!</button> <!--Special Promotion offered 10% discount today-->
             </div>
         </form>
     </section>
     <br>
     <br>
+    <!--My website footer-->
     <footer>
-        <div class="line-with-gap">
+        <div class="line-with-gap"> <!--2 Line spreading across the website with the Bakery name in the middle-->
             <div class="text-in-middle">KYC Bakery</div>
         </div>
         <br>
-        <p class="footer-text">Follow Us on Social Media!</p>
+        <p class="footer-text">Follow Us on Social Media!</p> <!--Call to Action-->
         <div class="footer-container">
-            <div class="footer-links-left">
+            <div class="footer-links-left"> <!--Website navigation and details-->
                 <a href="about.html">About</a>
                 <a href="about.html">Terms and Condition</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="socialmedia2">
+            <div class="socialmedia2"> <!--Call to action to encourage users to follow our social media page-->
                 <img src="image/instagram.png" alt="Instagram">
                 <img src="image/facebook.png" alt="Facebook">
                 <img src="image/twitter.png" alt="Facebook">
             </div>
-            <div class="footer-link-right">
+            <div class="footer-link-right"> <!--Website navigation and details-->
                 <a href="shop.html">Shop</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">Policy</a>
             </div>
         </div>
+        <!--Contact Information-->
         <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
 
+    <!--Popup navigation for hover over menu icon ontop-->
     <div id="popupMenu" class="popup-menu">
         <a href="menu.html">Menu</a>
         <a href="shop.html">Shop</a>
@@ -162,7 +170,8 @@
         menu.style.display = "none";
     }
     </script>
-    <script src="index.js"></script>
+    <script src="loading.js"></script>
+    <script src="index.js"></script> <!--Using the index.js-->
 
 </body>
 </html>

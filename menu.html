@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <header>
+    <header> <!--Creating a header for my website with navigation-->
         <nav class="menu">
             <div class="icons">
                 <img src="image/menu.png" alt="Shop">
@@ -19,7 +19,7 @@
             <div class="logo">
                 <img src="image/croissant.png" alt="KYC Bakery">
             </div>
-            <ul>
+            <ul> <!--Navigation bar to navigate around the website-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="shop.html">Shop</a></li>
@@ -27,12 +27,12 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="content">
+        <div class="content"> <!--Div to display product-->
             <div class="photo">
                 <img src="image/croissants-wooden-cutting-board.jpg" alt="Croissant">
             </div>
-            <div class="details">
-                <h1 style="font-family:'Pacificoregular'">Fluffy and Flaky Croissant</h1>
+            <div class="details"> 
+                <h1 style="font-family:'Pacificoregular'">Fluffy and Flaky Croissant</h1> <!--background of croissant-->
                 <p>The name derived from french it means crescent or crescent of the moon. The origin of the croissant can actually be traced back to 13th century Austria, where it was called the kipferl, the German word for crescent.</p>
             </div>
         </div>
@@ -40,8 +40,9 @@
     <br>
     <br>
     <br>
-    <section>
+    <section> <!-- Menu sections with different categories --> <!--When clicked it will be sent to market items or the bag icon-->
         <h1 style="text-align: center;font-size: 34px;font-family:'Pacificoregular'">What To Eat</h1><br>
+        <!-- Viennoiserie category -->
         <h2 style="font-family:'Courier New', Courier, monospace">Viennoiserie</h2>
         <hr style="height:1px;background-color: black;border:none;width:15%;">
         <div class="box-container"> 
@@ -78,6 +79,7 @@
     <section>
         <br>
         <h2 style="font-family:'Courier New', Courier, monospace">Pastry</h2>
+        <!-- Pastry category -->
         <hr style="height:1px;background-color: black;border:none;width:15%;">
         <div class="box-container"> 
             <!-- First row of boxes -->
@@ -108,6 +110,7 @@
     <section>
         <br>
         <h2 style="font-family:'Courier New', Courier, monospace">Bread</h2>
+        <!--Bread Category-->
         <hr style="height:1px;background-color: black;border:none;width:15%;">
         <div class="box-container"> 
             <!-- First row of boxes -->
@@ -135,64 +138,70 @@
             </div>
         </div>
     </section>
-    <section class="menu-background">
-        <video autoplay muted loop>
+    <section class="menu-background"> <!--Background with videos for ambience-->
+        <video autoplay muted loop> <!--Muted and loop-->
             <source src="videos/pexels-eva-elijas-7236946 (Original).mp4" type="video/mp4">
         </video>
-        <div class="menu-background-text">
+        <div class="menu-background-text"> <!--Icons to display what we have and appealing text-->
             <P class="textformenu">Indulge in the delightful world of pastries with our tempting selection! Treat yourself to the exquisite flavors and textures that our pastries have to offer.</P>
             <img src="image/delivery.png">
-            <img src="image/location.png">
-            <img src="image/discount.png">
-            <form action="shop.html" post="get">
+            <img src="image/location.png"> 
+            <img src="image/discount.png"> 
+            <form action="shop.html" post="get"> <!--Call to action leading to shop page-->
                 <button class="buttonformenu">Order Now!</button>
             </form>
         </div>
     </section>
     <br>
-    <div id="market-modal" class="modal">
+    <div id="market-modal" class="modal"> <!--Display market items when clicked-->
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Market Items</h2>
             <ul id="market-items-list"></ul>
-            <div>Total Amount: <span id="total-amount">$0.00</span></div>
-            <form action="payment.html" method="get">
+            <div>Total Amount: <span id="total-amount">$0.00</span></div> <!--The total amount of all product which user clicked-->
+            <form action="payment.html" method="get"> <!--Call to action leading to payment page-->
                 <button type="submit">Order</button>
             </form>
         </div>
     </div>
-    <br><br><br>
+    <br>
+    <!--My website footer-->
     <footer>
-        <div class="line-with-gap">
+        <div class="line-with-gap"> <!--2 Line spreading across the website with the Bakery name in the middle-->
             <div class="text-in-middle">KYC Bakery</div>
         </div>
         <br>
         <p class="footer-text">Follow Us on Social Media!</p>
         <div class="footer-container">
-            <div class="footer-links-left">
+            <div class="footer-links-left"> <!--Website navigation and details-->
                 <a href="about.html">About</a>
                 <a href="about.html">Terms and Condition</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="socialmedia2">
+            <div class="socialmedia2"> <!--Call to action to encourage users to follow our social media page-->
                 <img src="image/instagram.png" alt="Instagram">
                 <img src="image/facebook.png" alt="Facebook">
                 <img src="image/twitter.png" alt="Facebook">
             </div>
-            <div class="footer-link-right">
+            <div class="footer-link-right"> <!--Website navigation and details-->
                 <a href="shop.html">Shop</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">Policy</a>
             </div>
         </div>
+        <!--Contact Information-->
         <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
 
+    <!--javascript for the bag icon and the modal-->
     <script src="menujava.js"></script>
+    <!--Menu Slide in Animation-->
     <script>
+        // Function to check if an element is in the viewport
         function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
+            let rect = element.getBoundingClientRect();
+            // Check if the element is within the viewport
             return (
                 rect.top >= 0 &&
                 rect.left >= 0 &&
@@ -200,12 +209,15 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
-
+        // Function to animate elements when they come into the viewport during scrolling
         function animateOnScroll() {
-            const boxes = document.querySelectorAll('.box');
+            // Select all elements with the class 'box'
+            let boxes = document.querySelectorAll('.box');
 
+            // Iterate through each box element
             boxes.forEach(box => {
                 if (isInViewport(box)) {
+                    // If box is in viewport Add the 'slide-in' class to the box for animation
                     box.classList.add('slide-in');
                 }
             });

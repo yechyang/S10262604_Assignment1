@@ -30,7 +30,7 @@
     </header>
 
     <section>
-        <div class="contact-background">
+        <div class="contact-background"> <!--A video background that run repeatedly for visual-->
             <video autoplay muted loop>
                 <source src="videos/pexels-roman-odintsov-5951652 (2160p).mp4" type="video/mp4">
             </video>
@@ -39,10 +39,10 @@
     </section>
 
     <section class="contact-container">
-        <div class="left-contact-container">
+        <div class="left-contact-container"> <!--Google map implementation-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4057162128338!2d103.8204185385312!3d1.2872436812096346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da197fd63fc601%3A0x7057355375439ced!2s95C%20Henderson%20Rd%2C%20Singapore%20153095!5e0!3m2!1sen!2ssg!4v1701155354794!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="right-contact-container">
+        <div class="right-contact-container"> <!--Enquiries Form for user to input-->
             <form action="#" post="get">
                 <div class="insidecontact">
                     <h1 style="font-family:'Courier New', Courier, monospace;font-size: 30px;">We'd love to hear from you</h1>
@@ -69,25 +69,25 @@
                     <input type="checkbox" name="aa" value="checkbox1"> Terms and condition apply
                 </div>
                 <div class="insidecontact">
-                    <button type="submit" onclick="showPopup()">Send</button>
+                    <button type="submit" onclick="showPopup()">Send</button> <!--Call to action and javascript popup-->
                 </div>
             </form>
         </div>
     </section>
 
-    <div id="market-modal" class="modal">
+    <div id="market-modal" class="modal"> <!--Display market items when clicked-->
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Market Items</h2>
             <ul id="market-items-list"></ul>
-            <div>Total Amount: <span id="total-amount">$0.00</span></div>
-            <form action="payment.html" method="get">
+            <div>Total Amount: <span id="total-amount">$0.00</span></div> <!--Total Amount-->
+            <form action="payment.html" method="get"> <!--Call to action button to payment page-->
                 <button type="submit">Order</button>
             </form>
         </div>
     </div>
 
-    <div id="myModal" class="popup-contact">
+    <div id="myModal" class="popup-contact"> <!--Popup open and close-->
         <span class="close" onclick="closePopup()">&times;</span>
         <h1>Response received</h1>
         <p>Your valuable feedback will help us refine the website interface and enhance its user-friendliness.</p>
@@ -95,32 +95,36 @@
 
     <hr>
     <footer>
-        <div class="line-with-gap">
-            <div class="text-in-middle">KYC Bakery</div>
+        <div class="line-with-gap"> <!--2 Line spreading across the website with the Bakery name in the middle-->
+            <div class="text-in-middle">KYC Bakery</div> 
         </div>
         <br>
         <p class="footer-text">Follow Us on Social Media!</p>
         <div class="footer-container">
-            <div class="footer-links-left">
+            <div class="footer-links-left"> <!--Website navigation and details-->
                 <a href="about.html">About</a>
                 <a href="about.html">Terms and Condition</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="socialmedia2">
+            <div class="socialmedia2"> <!--Call to action to encourage users to follow our social media page-->
                 <img src="image/instagram.png" alt="Instagram">
                 <img src="image/facebook.png" alt="Facebook">
                 <img src="image/twitter.png" alt="Facebook">
             </div>
-            <div class="footer-link-right">
+            <div class="footer-link-right"> <!--Website navigation and details-->
                 <a href="shop.html">Shop</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">Policy</a>
             </div>
         </div>
+        <!--Contact Information-->
         <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
+
+    <!--javascript for the bag icon and the modal-->
     <script src="menujava.js"></script>
+    <!--Popup function-->
     <script src="contact.js"></script>
 </body>
 </html>

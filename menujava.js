@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the market icon element
+    // Get the market icon element and other html elements
     const marketIcon = document.getElementById('market-icon');
     const marketCounter = document.getElementById('market-counter');
     const marketModal = document.getElementById('market-modal');
@@ -10,12 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectedItems = [];
     let totalAmount = 0
 
+    // Load previously saved items from session storage
     loadSavedItems();
 
     // Add a click event listener to each menu item image
     const menuImages = document.querySelectorAll('.box img');
     menuImages.forEach(image => {
         image.addEventListener('click', function () {
+            // Get information about the selected item
             const itemDescription = this.parentNode.querySelector('p').textContent.trim();
 
             // Resize the image before converting to Base64
@@ -24,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Convert the resized image to a Base64-encoded string
             const itemImageBase64 = getBase64FromImage(resizedImage);
 
-
+            // Get information about the selected item
             const thirdParagraph = this.parentNode.querySelector('p:nth-child(3)').textContent.trim();
 
 
@@ -39,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // You can also update the UI to indicate the item was added
             alert(`${itemDescription} added to market!`);
 
+            // Save the selected items to session storage
             saveItemsToLocalStorage();
         });
     });
@@ -95,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
             addItemToMarketModal(item);
         });
 
+        // Update the total amount displayed in the modal
         updateTotalAmount();
     }
 
@@ -109,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
         totalAmountElement.textContent = `$${totalAmount.toFixed(2)}`;
     }
 
+    // Function to load previously saved items from session storage
     function loadSavedItems() {
         const savedItems = sessionStorage.getItem('selectedItems');
         if (savedItems) {
@@ -118,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Function to save items to localStorage
+    // Function to save items to Session Storage
     function saveItemsToLocalStorage() {
         sessionStorage.setItem('selectedItems', JSON.stringify(selectedItems));
     }

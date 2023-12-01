@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu"> <!--Creating a header for my website with navigation-->
             <div class="icons">
                 <img src="image/menu.png" alt="Shop">
                 <img src="image/market.png" alt="Shop" id="market-icon">
@@ -19,7 +19,7 @@
             <div class="logo">
                 <img src="image/croissant.png" alt="KYC Bakery">
             </div>
-            <ul>
+            <ul> <!--Navigation bar to navigate around the website-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="shop.html">Shop</a></li>
@@ -29,21 +29,21 @@
         </nav>
     </header>
     <section>
-        <div class="about-container">
+        <div class="about-container"> <!--Display Image and about us text-->
             <img src="image/croissants-wooden-cutting-board.jpg" alt="Your Image">
             <h1>About Us!</h1>
-            <p>We are a bakery that has been serving the community for over numerous years.  Inspired by French artisans, we began on our journey to master the handmade craft of baking. 
+            <p>We are a bakery that has been serving the community for over numerous years. Inspired by French artisans, we began on our journey to master the handmade craft of baking. 
                 We pride ourselves on using time-honoured techniques and respecting culture. 
                 We lovingly source and curate the best ingredients, so that everything can be baked to perfection for you.</p>
           </div>
     </section>
-    <br><br><br>
+    <br><br>
     <section>
-        <div class="slider-background">
+        <div class="slider-background"> <!--Background video loop-->
             <video autoplay muted loop>
                 <source src="videos/dough_-_43653 (720p).mp4" type="video/mp4">
             </video>
-            <div class="text-below-box">
+            <div class="text-below-box"> <!--Slider with 3 different text-->
                 <h2 style="font-size: 40px;font-weight: bold;font-family:'Pacificoregular'">Our Story</h2><br><br>
                 <div class="slider-bottom">
                     <div class="slider-bottom-text" data-index="1">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 
-                <div class="dots-container">
+                <div class="dots-container"> <!--The dots to let user click to change around the slides -->
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -68,8 +68,8 @@
     
     <section>
         <h1 style="text-align:center;margin-top:80px;font-size: 36px;font-family:'Pacificoregular'">Gallery</h1>
-        <div class="gallery-container">
-            <div class="gallery">
+        <div class="gallery-container"> <!--Gallery that display the images that slide after some time-->
+            <div class="gallery"> 
                 <img src="image/front-view-baker-spreading-flour-dough-composition.jpg" alt="Image 1">
                 <img src="image/baked-bun-with-black-copy-space-background.jpg" alt="Image 2">
                 <img src="image/high-angle-cook-whisking-eggs-bowl.jpg" alt="image 3">
@@ -79,64 +79,70 @@
         </div>
     </section>
 
-    <div id="market-modal" class="modal">
+    <div id="market-modal" class="modal"> <!--Display market items when clicked-->
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Market Items</h2>
             <ul id="market-items-list"></ul>
-            <div>Total Amount: <span id="total-amount">$0.00</span></div>
-            <form action="payment.html" method="get">
+            <div>Total Amount: <span id="total-amount">$0.00</span></div> <!--The total amount of all product which user clicked-->
+            <form action="payment.html" method="get"> <!--Call to action leading to payment page-->
                 <button type="submit">Order</button>
             </form>
         </div>
     </div>
-    <br><br><br>
+    <br>
     <footer>
-        <div class="line-with-gap">
+        <div class="line-with-gap"> <!--2 Line spreading across the website with the Bakery name in the middle-->
             <div class="text-in-middle">KYC Bakery</div>
         </div>
         <br>
         <p class="footer-text">Follow Us on Social Media!</p>
         <div class="footer-container">
-            <div class="footer-links-left">
+            <div class="footer-links-left"> <!--Website navigation and details-->
                 <a href="about.html">About</a>
                 <a href="about.html">Terms and Condition</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="socialmedia2">
+            <div class="socialmedia2"> <!--Call to action to encourage users to follow our social media page-->
                 <img src="image/instagram.png" alt="Instagram">
                 <img src="image/facebook.png" alt="Facebook">
                 <img src="image/twitter.png" alt="Facebook">
             </div>
-            <div class="footer-link-right">
+            <div class="footer-link-right"> <!--Website navigation and details-->
                 <a href="shop.html">Shop</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">Policy</a>
             </div>
         </div>
+        <!--Contact information-->
         <p style="text-align: center;">+65 6112 0102 / enquiries@KYCBakery.com</p>
         <p style="text-align: center;">(Open daily from 7:30 AM - 7:00 PM)</p><br>
     </footer>
 
+    <!--javascript for the bag icon and the modal-->
     <script src="menujava.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Initialize the current index to 1 and show the corresponding text
             let currentIndex = 1;
             showText(currentIndex);
     
             function showText(index) {
+                // Select all elements with the class "slider-bottom-text"
                 const texts = document.querySelectorAll(".slider-bottom-text");
+                // Iterate through each text element
                 texts.forEach((text) => {
-                    text.style.display = +text.getAttribute("data-index") === index ? "block" : "none";
+                    text.style.display = +text.getAttribute("data-index") === index ? "block" : "none"; // if match display else hide
                 });
             }
     
             window.currentSlide = function (index) {
-                currentIndex = index;
+                currentIndex = index; //Display the appropriate text
                 showText(currentIndex);
             };
         });
     </script>
+    <!--For my Gallery slide-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="aboutscript.js"></script>
 </body>
