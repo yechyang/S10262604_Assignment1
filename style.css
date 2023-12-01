@@ -5,6 +5,7 @@ body {
     background-color:#fafdf3
 }
 
+/* for icons in the menu */
 .icons{
     text-align: end;
     margin-right: 10px;
@@ -18,6 +19,7 @@ body {
     cursor: pointer;
 }
 
+/* For the social media icon to be at footer */
 .socialmedia2{
     text-align: center;
     display: block;
@@ -31,9 +33,12 @@ body {
     margin-right:80px;
 }
 
+/* Logo of the store */
 .logo {
     text-align: center;
 }
+
+/* Size of logo */
 .logo img {
     max-width: 125px;
 }
@@ -45,21 +50,25 @@ h1{
     font-family:'Pacificoregular';
 }
 
+/*Navigation Menu*/
 .menu {
-    /*background-color: #333;*/
     text-align: center;
 }
+
+/* Navigation bar for the pages */
 .menu ul {
     list-style: none;
     padding: 0;
     margin-bottom:4px;
 }
+
 .menu ul li {
     
     display: inline;
     margin: 10px;
     position: relative;
 }
+
 .menu ul li a {
     text-decoration: none;
     color: black;
@@ -73,6 +82,7 @@ h1{
     color:gray;
 }
 
+/* Background to fill page to display image related to store */
 .background-responsive-img{
     background-image: url('image/background.jpg');
     background-size: cover;
@@ -86,29 +96,32 @@ h1{
     display:block;
 }
 
+/* Container for the slider */
 .slider-container {
     overflow: hidden;
     position: relative;
-    height: 50px; /* Adjust the height as needed */
-    background-color: #333; /* Set a background color for the slider */
+    height: 50px; 
+    background-color: #333; 
 }
 
+/* Slide text displaying discount */
 .discount-text-container {
     overflow: hidden;
     position: relative;
-    max-width: 98%; /* Adjust the width as needed */
-    margin: 20px auto; /* Add some top margin to move the text down */
+    max-width: 98%; 
+    margin: 20px auto; 
 }
 
-
+/* Text for discount */
 .discount-text {
     animation: slide 12s linear infinite; /* Adjust the animation duration as needed */
     white-space: nowrap;
-    color: #fff; /* Set text color */
+    color: #fff; 
     font-size: 22px;
     font-family:'verdana'
 }
 
+/* The slide distance */
 @keyframes slide {
     0% {
         transform: translateX(100%);
@@ -118,6 +131,7 @@ h1{
     }
 }
 
+/* Button inside the background image */
 .button{
     padding-right: 30px;
     padding-left: 30px;
@@ -132,7 +146,7 @@ h1{
     top: 85%;
     left: 50%;
     transform: translate(-50%); /*align the button to the center*/
-    transition: color 0.3s ease; /*smooth transition effect*/
+    transition: color 0.3s ease; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -140,6 +154,7 @@ h1{
     color:black;
 }
 
+/* Text inside background image */
 .text_above_button{
     text-align:center;
     font-size: 18px;
@@ -150,10 +165,12 @@ h1{
     transform: translate(-50%);
 }
 
+/* Container for button */
 .second-button-container{
     text-align: center;
 }
 
+/* Second button at the bottom of page */
 .second-button{
     padding-right: 30px;
     padding-left: 30px;
@@ -171,6 +188,7 @@ h1{
      color:black;
 }
 
+/* Container for the 3 boxes */
 .box-container {
     display: flex;
     justify-content: space-around;
@@ -179,6 +197,7 @@ h1{
     flex-wrap: wrap; /* Allow boxes to wrap to the next line if the screen is too small */
 }
 
+/* Box sizes which fit 3 boxes in a row */
 .box {
     width: 28%;
     border: 0.2px solid #ccc;
@@ -190,6 +209,7 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Image inside the box */
 .box img {
     max-width: 100%;
     height: 70%;
@@ -202,8 +222,9 @@ h1{
     color:black;
 }
 
+/* Adjust the scale factor for the close-up effect */
 .box img:hover {
-    transform: scale(1.1); /* Adjust the scale factor for the close-up effect */
+    transform: scale(1.1); 
 }
 
 .text-below-box{
@@ -217,8 +238,8 @@ h1{
     font-family:'verdana';
 }
 
+/* Background container for video */
 .background{
-    /*background-image: url('image/flat-lay-vegan-baked-products-arrangement.jpg');*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -239,6 +260,7 @@ h1{
     left: 0;
 }
 
+/* Slider for user to click to change slide */
 .slider-container {
     width: 100%;
     margin: 0 -150px;
@@ -248,6 +270,7 @@ h1{
     background:transparent;
 }
 
+/* Popup menu for the icon menu */
 .popup-menu {
     text-align: center;
     width:100px;
@@ -262,6 +285,7 @@ h1{
     margin-right: 30px;
 }
 
+/* Navigation inside the popup */
 .popup-menu a {
     text-decoration: none;
     font-size: 18px;
@@ -275,6 +299,7 @@ h1{
     color: #000000;
 }
 
+/* Slider text for the 3 slides */
 .slider-text {
     margin: -20px 0;
     display: none;
@@ -294,11 +319,13 @@ h1{
     display: block;
 }
 
+/* Dots container for the slider for user to click on */
 .dots-container {
     text-align: center;
     margin-top: 10px;
 }
 
+/* Dots sizes */
 .dot {
     height: 15px;
     width: 15px;
@@ -318,12 +345,14 @@ footer {
     padding: 20px 0; /* Adjust padding as needed */
 }
 
+/* Line with gap in the middle of the footer */
 .line-with-gap {
     position: relative;
     text-align: center;
     margin-top: 20px;
 }
 
+/* Controling the length for the gap in the middle */
 .line-with-gap::before,
 .line-with-gap::after {
     content: "";
@@ -333,14 +362,17 @@ footer {
     background-color: black; 
 }
 
+/* Creating a gap */
 .line-with-gap::before {
     margin-right: 8%;
 }
 
+/* Creating a gap */
 .line-with-gap::after {
     margin-left: 8%;
 }
 
+/* For the store name in the middle of the gap */
 .text-in-middle {
     position: relative;
     z-index: 1;
@@ -351,7 +383,7 @@ footer {
     font-family:'Pacificoregular'
 }
 
-
+/* container for the social media icon and navigation */
 .footer-container {
     display: flex;
     justify-content: space-evenly;
@@ -367,9 +399,9 @@ footer {
 
 .footer-links-left a {
     display:block;
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 10px; 
     text-decoration: none;
-    color: black; /* Adjust color as needed */
+    color: black; 
     margin-bottom: 20px;
 }
 
@@ -380,9 +412,9 @@ footer {
 
 .footer-link-right a {
     display: block;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; 
     text-decoration: none;
-    color: black; /* Adjust color as needed */
+    color: black; 
 }
 
 .footer-text{
@@ -392,6 +424,7 @@ footer {
     margin-bottom:0;
 }
 
+/* Loading javascript to display loading page before the home page launch */
 .loading-page {
     display: flex;
     flex-direction: column;

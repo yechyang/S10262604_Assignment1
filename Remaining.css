@@ -5,6 +5,7 @@ body {
     background-color:#fafdf3;
 }
 
+/*Navigation Menu*/
 .menu {
     background-color: rgb(35, 116, 85);
     text-align: center;
@@ -13,12 +14,14 @@ body {
     position:relative;
 }
 
+/* for icons in the menu */
 .icons{
     text-align: end;
     margin-right: 10px;
     margin-top: 0;
 }
 
+/* for specific icon with ID 'market-icon' */
 .icons #market-icon {
     width: 25px;
     margin-right: 10px; 
@@ -31,6 +34,7 @@ body {
     margin-right:15px
 }
 
+/* Logo */
 .logo{
     text-align:center
 }
@@ -40,6 +44,7 @@ body {
     padding-bottom:20px;
 }
 
+/* For the market icon pop out */
 .modal {
     display: none;
     position: fixed;
@@ -74,11 +79,13 @@ body {
     transition: color 0.3s ease;
 }
 
+/* For the scroll in the modal */
 #market-items-list {
-    max-height: 500px; /* Set the maximum height for scrollability */
-    overflow-y: auto; /* Enable vertical scrolling if the list exceeds the max height */
+    max-height: 500px;
+    overflow-y: auto; 
 }
 
+/* Close modal */
 .close {
     color: #aaa;
     float: right;
@@ -94,6 +101,7 @@ body {
     cursor: pointer;
 }
 
+/* Navigation bar for the pages */
 .menu ul {
     list-style: none;
     padding: 10px 0;
@@ -126,6 +134,7 @@ body {
     color:black;
 }
 
+/* Background to fill page to display videos */
 .menu-background{
     background-size: cover;
     background-position: center;
@@ -175,22 +184,25 @@ body {
     filter: brightness(0) invert(1);
 }
 
+/* Container for photo and details */
 .content {
     display: flex;
-    flex-direction: row; /* Arrange items in a column */
+    flex-direction: row; 
     align-items: flex-start;
 }
 
+/* Image for the top part menu page */
 .photo {
     float: left;
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
 }
 
+/* Text for the top part of menu page */
 .details {
     text-align:center;
     float: right;
-    width: 50%; /* Adjust as needed */
-    padding: 20px; /* Adjust as needed */
+    width: 50%; 
+    padding: 20px; 
     margin-top: 90px;
     margin-right:80px;
 }
@@ -210,6 +222,7 @@ h2{
     font-weight: bold;
 }
 
+/* box container to contain the menu */
 .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -217,8 +230,9 @@ h2{
     margin-top: 20px;
 }
 
+/* Box to display the different menu like pastry and bread */
 .box {
-    width: 30%; /* Adjust as needed */
+    width: 30%;
     text-align: center;
     margin: 30px;
     opacity: 0;
@@ -226,6 +240,7 @@ h2{
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 } 
 
+/* Animation for the box when scrolling */
 .box.slide-in {
     opacity: 1;
     transform: translateY(0);
@@ -239,8 +254,9 @@ h2{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Enlarge the image of menu when hovered */
 .box img:hover {
-    transform: scale(1.1); /* Adjust the scale factor for the close-up effect */
+    transform: scale(1.1); 
 }
 
 
@@ -250,34 +266,7 @@ h2{
     font-weight: bold;
 } 
 
-/*testing*/
-
-#slider-container {
-    display: flex;
-    overflow: hidden;
-}
-
-.slider-item {
-    width: 100%;
-    display: none;
-    justify-content:center;
-    text-align:center;
-    margin-left:30px;
-}
-
-.slider-item img {
-    max-width: 30%;
-    height: auto;
-    width:150px;
-    margin: 0 10px;
-    border-radius:30px;
-    margin-bottom:10px;
-}
-
-.slider-item p{
-    margin-top:60px;
-}
-
+/* Button for menu */
 #buttons-container {
     margin-top: 10px;
     display:flex;
@@ -297,6 +286,7 @@ button:hover{
     color: gray;
 }
 
+/* Styling for button menu */
 .buttonformenu{
     padding-right: 30px;
     padding-left: 30px;
@@ -308,14 +298,15 @@ button:hover{
     border-radius:5px;
     position:relative;
     color: whitesmoke;
-    transition: color 0.3s ease; /*smooth transition effect*/
+    transition: color 0.3s ease; /* Transition */
 }
 
 .textformenu{
     text-align:center;
 }
 
-.shop-slider-background{
+/* Background for shop */
+.shop-background{
     background-image: url('image/sweet-bun-with-chocolate-syrup-it.jpg');
     background-size: cover;
     background-position: center;
@@ -327,6 +318,7 @@ button:hover{
     z-index: -1;
 }
 
+/* Container positioning for form */
 .boxContainer{
     display: flex;
     justify-content: center;
@@ -334,6 +326,7 @@ button:hover{
     margin-top:10px;
 }
 
+/* Control the box size and border and color */
 .big-empty-box{
     width: 800px;
     height: 1300px;
@@ -343,11 +336,13 @@ button:hover{
     color:whitesmoke;
 }
 
+/* Content positioning */
 .inputbox{
     margin-top:40px;
     margin-left:50px;
     margin-bottom: 40px;
 }
+
 
 .textarea-style {
     width: 600px;
@@ -369,6 +364,7 @@ button:hover{
     margin-bottom: 20px;
 }
 
+/* Enlarging the radio button size */
 .inputbox input[type="radio"] {
     transform: scale(1.5);
     margin-right: 5px;
@@ -376,6 +372,7 @@ button:hover{
     margin-left:25px;
 }
 
+/* styling the size of the field */
 select {
     width: 250px; 
     padding: 10px; 
@@ -405,6 +402,7 @@ option {
     margin-right:30px;
 } 
 
+/* Button styling */
 .inputbox button[type="submit"]{
     width: 150px; 
     padding: 10px; 
@@ -419,6 +417,7 @@ option {
     color:darkgray;
 }
 
+/* Slide up information */
 @keyframes splitAnimation {
     0% {
         transform: translateY(100%);
@@ -430,6 +429,7 @@ option {
       }
 }
 
+/* container for the image and text that will be slide up */
 .about-container {
     max-width:1000px;
     display: flex;
@@ -462,7 +462,7 @@ option {
     animation: splitAnimation 3s forwards;
 }
 
-
+/* About page slider with background videos */
 .slider-background{
     background-size: cover;
     background-position: center;
@@ -485,6 +485,7 @@ video {
     left: 0;
 }
 
+/* styling for the slider */
 .slider-bottom {
     width: 100%;
     margin: 0 -150px;
@@ -500,6 +501,7 @@ video {
     animation: slideIn 3s ease-in-out forwards;
 }
 
+/* styling for the text in slider */
 .text-below-box{
     text-align:center;
     font-size: 18px;
@@ -510,7 +512,7 @@ video {
     transform: translate(-50%, -50%);
 }
 
-
+/* Slide in animation */
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);
@@ -524,6 +526,7 @@ video {
     display: block;
 }
 
+/* Dots for slider */
 .dots-container {
     text-align: center;
     margin-top: 30px;
@@ -544,6 +547,7 @@ video {
     background-color: #717171;
 }
 
+/* Display of image using container */
 .gallery-container {
     overflow: hidden;
     width: 100%;
@@ -551,6 +555,7 @@ video {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
+/* gallery slide */
 .gallery {
     display: flex;
     transition: transform 1s ease-in-out;
@@ -562,6 +567,7 @@ video {
     height: auto;
 }
 
+/* textarea contact styling */
 .textarea-contact-style {
     width: 600px;
     height: 150px; 
@@ -572,6 +578,7 @@ video {
     margin-bottom: 20px;
 }
 
+/* Background video for the top of contact */
 .contact-background{
     background-size: cover;
     background-position: center;
@@ -584,6 +591,7 @@ video {
     display:block;
 }
 
+/* Position text in the middle of the background */
 .contact-background h1{
     position: absolute;
     top: 50%;
@@ -594,11 +602,13 @@ video {
     font-family: verdana
 }
 
+/* Contact container that contains map and form */
 .contact-container{
     display: flex;
     flex-direction: row;
 }
 
+/* For the map on the left */
 .left-contact-container{
     max-width:600px;
     align-items: flex-start;
@@ -607,6 +617,7 @@ video {
     margin-left:100px
 }
 
+/* For the form on the left*/
 .right-contact-container{
     max-width:800px;
     align-items: flex-start;
@@ -615,6 +626,7 @@ video {
     flex:1;
 }
 
+/* The position of the text and form on the right contact container */
 .insidecontact{
     margin-top:40px;
     margin-left:50px;
@@ -638,6 +650,7 @@ video {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* Popup for button when clicked */
 .popup-contact{
     display: none;
     position: fixed;
@@ -656,6 +669,7 @@ video {
     font-size:20px;
 }
 
+/* Close popup contact when clicked on X button */
 .close-popup-contact{
     position: absolute;
     top: 10px;
@@ -663,6 +677,7 @@ video {
     cursor: pointer;
 }
 
+/* Social media container */
 .socialmedia2{
     text-align: center;
     display: block;
@@ -671,6 +686,7 @@ video {
     margin-bottom:40px;
 }
 
+/* size of social media icon */
 .socialmedia2 img{
     max-width:30px;
     margin-right:80px
@@ -681,12 +697,14 @@ footer {
     padding: 20px 0; /* Adjust padding as needed */
 }
 
+/* Line with gap in the middle of the footer */
 .line-with-gap {
     position: relative;
     text-align: center;
     margin-top: 20px;
 }
 
+/* Controling the length for the gap in the middle */
 .line-with-gap::before,
 .line-with-gap::after {
     content: "";
@@ -696,14 +714,17 @@ footer {
     background-color: black; 
 }
 
+/* Creating a gap */
 .line-with-gap::before {
     margin-right: 8%;
 }
 
+/* Creating a gap */
 .line-with-gap::after {
     margin-left: 8%;
 }
 
+/* For the store name in the middle of the gap */
 .text-in-middle {
     position: relative;
     z-index: 1;
@@ -714,7 +735,7 @@ footer {
     font-family:'Pacificoregular'
 }
 
-
+/* container for the social media icon and navigation */
 .footer-container {
     display: flex;
     justify-content: space-evenly;
@@ -730,9 +751,9 @@ footer {
 
 .footer-links-left a {
     display:block;
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 10px; 
     text-decoration: none;
-    color: black; /* Adjust color as needed */
+    color: black; 
     margin-bottom: 20px;
 }
 
@@ -743,12 +764,12 @@ footer {
 
 .footer-link-right a {
     display: block;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; 
     text-decoration: none;
-    color: black; /* Adjust color as needed */
+    color: black; 
 }   
 
-
+/* This basically footer for shop it's the same but just changing the font and line color all to white */
 .line-with-gap-white {
     position: relative;
     text-align: center;
@@ -756,6 +777,7 @@ footer {
     color:whitesmoke
 }
 
+/* Same (read on top line-with-gap-white) */
 .line-with-gap-white::before,
 .line-with-gap-white::after {
     content: "";
@@ -765,10 +787,12 @@ footer {
     background-color: whitesmoke; 
 }
 
+/* Same (read on top line-with-gap-white) */
 .line-with-gap-white::before {
     margin-right: 8%;
 }
 
+/* Same (read on top line-with-gap-white) */
 .line-with-gap-white::after {
     margin-left: 8%;
 }
@@ -777,7 +801,7 @@ footer {
     position: relative;
     z-index: 1;
     display: inline-block;
-    padding: 0; /* Adjust padding as needed */
+    padding: 0;
     background-color: transparent;
     font-size: 24px;
     font-family:'Pacificoregular'
@@ -799,9 +823,9 @@ footer {
 
 .footer-links-left-white a {
     display:block;
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 10px;
     text-decoration: none;
-    color: whitesmoke; /* Adjust color as needed */
+    color: whitesmoke; 
     margin-bottom: 20px;
 }
 
@@ -812,9 +836,9 @@ footer {
 
 .footer-link-right-white a {
     display: block;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; 
     text-decoration: none;
-    color: whitesmoke; /* Adjust color as needed */
+    color: whitesmoke; 
 }
 
 .footer-text{
@@ -922,11 +946,13 @@ footer {
     margin-left:170px;
 }
 
+/* Media query for screens with a maximum width of 500px */
 @media screen and (max-width: 500px) {
     body{
         font-size:12px;
         margin:0;
     }
+    /* Styling for social media icons in a column layout */
     .socialmedia2{
         display:flex;
         flex-direction: column;
@@ -944,10 +970,12 @@ footer {
         margin-top:10px;
         height:20px;
     }
+    /* shrink the size of logo */
     .logo img {
         max-width: 60px;
     }
 
+     /* Adjusting the menu layout for smaller screens */
     .menu ul {
         flex-direction: row;
         align-items: center;
@@ -960,6 +988,7 @@ footer {
         text-align: center;
     }
 
+    /* changing font size */
     .menu ul li a{
         font-size:19px;
         margin:0 5px;
@@ -987,16 +1016,19 @@ footer {
         margin-bottom:10px;
     }
 
+    /* Adjusting the layout of content */
     .content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     
+    /* Adjusting the photo section */
     .photo {
         width: 100%; 
     }
     
+    /* Adjusting the text section */
     .details {
         width:90%;
         margin-top:20px;
@@ -1019,6 +1051,7 @@ footer {
         margin-top:10px;
     }
     
+    /* Style the box to smaller size */
     .big-empty-box{
         width: 270px;
         height: 1400px;
@@ -1026,12 +1059,14 @@ footer {
         border-radius: 25px;
     }
     
+    /* Fit the big-emtpy box */
     .inputbox{
         margin-top:40px;
         margin-left:25px;
         margin-bottom: 40px;
     }
 
+    /* Fit the big-emtpy box */
     .textarea-style {
         width: 200px;
         height: 50px; 
@@ -1042,6 +1077,7 @@ footer {
         margin-bottom: 20px;
     }
     
+    /* Fit the big-emtpy box */
     .inputbox input[type="radio"] {
         transform: scale(1.5);
         margin-right: 5px;
@@ -1062,6 +1098,7 @@ footer {
         font-size: 16px; 
     }
     
+    /* Fit the big-emtpy box */
     .inputbox input[type="date"]{
         width: 200px; 
         padding: 10px; 
@@ -1070,6 +1107,7 @@ footer {
         background-color:rgb(250, 250, 250);
     }
     
+    /* Fit the big-emtpy box */
     .inputbox input[type="text"]{
         width: 200px; 
         padding: 10px; 
@@ -1080,6 +1118,7 @@ footer {
         margin-top:10px
     }
     
+    /* Fit the big-emtpy box */
     .inputbox button[type="submit"]{
         width: 150px; 
         padding: 10px; 
@@ -1088,11 +1127,8 @@ footer {
         background-color:rgb(35, 116, 85);
         color: whitesmoke;
     }
-    
-    .inputbox button[type="submit"]:hover{
-        color:darkgray;
-    }
 
+    /* Adjusting the font size */
     .about-container p{
         margin: 20px 25px;
         font-size: 16px;
@@ -1115,6 +1151,7 @@ footer {
         display:block;
     }
     
+    /* Smaller margin and padding */
     .slider-bottom {
         width: 100%;
         margin: 0 -50px;
@@ -1123,62 +1160,53 @@ footer {
         position: relative;
         background:transparent;
     }
-
+    
+    /* change the dot size */
     .dots-container {
         margin-top: 5px;
     }
+
+    /* change the dot size */
     .dot {
         margin: 0 2px;
         height: 10px; 
         width: 10px; 
     }
-
+    
+    /* change the column */
     .contact-container {
         flex-direction: column;
     }
 
+    /* Adjusting for .left-contact-container and .right-contact-container */
     .left-contact-container,
     .right-contact-container {
         max-width: 100%;
         margin: 15px 0;
     }
 
+    /* change the size of map */
     .left-contact-container iframe {
         width: 100%;
         height: 400px;
     }
-
+    
+    /* Change the font size */
     .right-contact-container p{
         font-size:16px
     }
 
+    /* Margin change */
     .insidecontact {
         margin: 20px; 
     }
 
+    /* Shrink the size of the button for radio */
     .insidecontact input[type="radio"] {
         transform: scale(1);
     }
 
-    .image-contact-container {
-        margin: 20px auto;
-    }
-
-    .image-contact-container p{
-        margin: 20px;
-        margin-top:0;
-    }
-
-    .images-contact-container {
-        width: 100%;
-        height: auto; 
-        margin: 20px 0; 
-    }
-
-    .images-contact-container iframe {
-        height:450px
-    }
-
+    /* textarea input field size change */
     .textarea-contact-style{
         width: 200px;
         height: 50px; 
@@ -1188,11 +1216,8 @@ footer {
         background-color: rgb(250, 250, 250);
         margin-bottom: 20px;
     }
-
-    .images-contact-container img:first-child {
-        display: none;
-    }
     
+    /* Changing size */
     .menu-background-text{
         width:300px;
         text-align:center;
@@ -1204,12 +1229,14 @@ footer {
         transform: translate(-50%, -50%);
     }
 
+    /* Changing size */
     .menu-label-text{
         font-size:16px;
         margin-right:5px;
         margin-left:5px;
     }
     
+    /* Changing size */
     .menu-background-text img{
         max-width: 40px;
         margin-right:9px;
@@ -1220,6 +1247,7 @@ footer {
         filter: brightness(0) invert(1);
     }
 
+    /* Shrink the size to fit 500px */
     .gallery-container {
         overflow: hidden;
         width: 100%;
@@ -1227,11 +1255,12 @@ footer {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     }
 
+    /* Smaller gap between image */
     .gallery img {
         margin-right:25px;
     }
 
-
+    /* Shorted the line */
     .line-with-gap::before,
     .line-with-gap::after {
         content: "";
@@ -1239,16 +1268,19 @@ footer {
         width: 20%; 
     }
     
+    /* Shrink the size of text */
     .text-in-middle {
         font-size: 18px;
     }
     
+    /* Margin changes */
     .footer-links-left {
         text-align: left;
         margin-top:20px;
         margin-left:100px;
     }
     
+    /* Margin changes */
     .footer-link-right {
         text-align: right;
         margin-top:20px;
@@ -1262,7 +1294,8 @@ footer {
     footer p{
         font-size:14px;
     }
-
+    
+    /* Shorted the line */
     .line-with-gap-white::before,
     .line-with-gap-white::after {
         content: "";
@@ -1270,16 +1303,19 @@ footer {
         width: 20%; 
     }
     
+    /* Shrink the size of text */
     .text-in-middle-white {
         font-size: 18px;
     }
     
+    /* Margin changes */
     .footer-links-left-white {
         text-align: left;
         margin-top:20px;
         margin-left:100px;
     }
     
+    /* Margin changes */
     .footer-link-right-white {
         text-align: right;
         margin-top:20px;
@@ -1290,6 +1326,7 @@ footer {
         font-size: 18px;
     }
 
+    /* Change the height of popup in contact to fit screen */
     .popup-contact{
         height:300px;
     }
