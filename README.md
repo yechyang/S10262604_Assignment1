@@ -1,6 +1,6 @@
 # S10262604_Assignment1
 
-## I used Iphone 11 for the responsiveness
+## I used Iphone X for the responsiveness
 
 ## KYC Bakery
 
@@ -81,7 +81,7 @@ The website is catered for user who want to purchase pastry and learn more about
 2. Contact form:
 - Empty input will have error message about required fields
 3. Media Query:
-- It works on Iphone 11
+- It works on Iphone X
 4. Different browsers:
 - It works on website such as microsoft edge, opera gx and google.
 
